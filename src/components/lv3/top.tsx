@@ -7,7 +7,9 @@ import {
   useColorModeValue,
   VStack,
   Button,
+  Container,
 } from "@chakra-ui/react";
+import NextImage from "next/image";
 
 export default function Top() {
   return (
@@ -15,14 +17,17 @@ export default function Top() {
       <Box
         bg={useColorModeValue("#00c4cc", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        minH={"460px"}
+        // height={"500"}
+        maxH={"470"}
+        maxHeight={500}
+        width={"100%"}
         borderColor={useColorModeValue("#00c4cc", "gray.900")}
       >
         <HStack>
-          <VStack 
+          <VStack
             align="center"
             style={{ marginLeft: 180 }}
-            transform="translate(8%)"
+            transform="translate(6%)"
           >
             <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
               <Image
@@ -47,7 +52,9 @@ export default function Top() {
             <HStack>
               <Button
                 as={"a"}
-                display={{ base: "none", md: "inline-flex" }}
+                size={"lg"}
+                paddingLeft={"10"}
+                paddingRight={"10"}
                 fontSize={"sm"}
                 fontWeight={600}
                 color={"black"}
@@ -60,7 +67,9 @@ export default function Top() {
               </Button>
               <Button
                 as={"a"}
-                display={{ base: "none", md: "inline-flex" }}
+                size={"lg"}
+                paddingLeft={"10"}
+                paddingRight={"10"}
                 fontSize={"sm"}
                 fontWeight={600}
                 color={"white"}
@@ -73,7 +82,17 @@ export default function Top() {
               </Button>
             </HStack>
           </VStack>
-          <Image src="/image/picture/img_top.png" alt="img_top" minW={710} />
+
+          <Box width={"100%"} height={450} overflow="hidden">
+            <Image
+              src="/image/picture/img_home01.png"
+              alt="img_top"
+              fit={"cover"}
+              align="left"
+              width={700}
+              height={550}
+            />
+          </Box>
         </HStack>
       </Box>
     </>
