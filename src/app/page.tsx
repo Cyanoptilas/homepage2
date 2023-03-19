@@ -1,12 +1,24 @@
 "use client";
 
-import { Box, ChakraProvider, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  ChakraProvider,
+  Heading,
+  Text,
+  useColorModeValue,
+  VStack,
+} from "@chakra-ui/react";
 // import { Top, Navbar2 } from "@/components/export";
-import { Top, WithSubnavigation } from "@/components/lv3/export";
+import {
+  Top,
+  WithSubnavigation,
+  BarNo1,
+  BarLogoScroll,
+  BarServiceOutline,
+  Availability,
+} from "@/components/lv3/export";
 
 import { useState } from "react";
-import BarNo1 from "@/components/lv3/bar_no1";
-import BarLogoScroll from "@/components/lv3/bar_logo_scroll";
 import Annotation1 from "@/components/lv1/annotation1";
 
 export default function Home() {
@@ -22,8 +34,14 @@ export default function Home() {
         <Box height={5} />
         <BarLogoScroll />
         <Annotation1 />
-        <Box height={20} width={"100%"} background={"blackAlpha.100"} />
-        <Box height={5} />
+      </VStack>
+      <VStack align={"center"} background={"blackAlpha.100"}>
+        <Box height={20} />
+        <BarServiceOutline />
+        <Box height={10} />
+        <Availability />
+        <Box height={10} />
+
       </VStack>
     </ChakraProvider>
   );

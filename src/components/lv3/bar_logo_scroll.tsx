@@ -6,21 +6,47 @@ import {
   position,
   Text,
   VStack,
+  keyframes,
+  usePrefersReducedMotion,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 
+const ScrollAnimation = keyframes`
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform:translateX(-100%);
+  }
+`;
 export default function BarLogoScroll() {
+  const preferMotion = usePrefersReducedMotion();
+
+  const myScrollAnimation = preferMotion
+    ? undefined
+    : `${ScrollAnimation} 22s linear infinite`;
   return (
     <>
-      <Box width={"100%"} height={100}>
-        <Image
-          src="/image/logo/logo-slide.png"
-          alt="ロゴスライド"
-          fit={"cover"}
-          align="left"
-          width={"100%"}
-          height={100}
-        />
+      <Box
+        width={4200}
+        height={100}
+        animation={myScrollAnimation}
+        background="white"
+      >
+        <HStack>
+          <Image
+            src="/image/logo/logo-slide.png"
+            alt="ロゴスライド"
+            fit={"cover"}
+            align="left"
+          />
+          <Image
+            src="/image/logo/logo-slide.png"
+            alt="ロゴスライド"
+            fit={"cover"}
+            align="left"
+          />
+        </HStack>
       </Box>
     </>
   );
