@@ -4,11 +4,11 @@ export default function Availability() {
   return (
     <Box>
       <VStack>
-        <Text as="b" fontSize={30} paddingY={10}>
+        <Text as="b" fontSize={34} paddingY={10}>
           SmartHRができること
         </Text>
         <HStack>
-          <VStack paddingX={20}>
+          <VStack paddingX={12} align={"center"}>
             <Text as="b" fontSize={46} color={"#00c4cc"}>
               01
             </Text>
@@ -26,7 +26,7 @@ export default function Availability() {
               width={200}
             />
           </VStack>
-          <VStack paddingX={20}>
+          <VStack paddingX={12}>
             <Text as="b" fontSize={46} color={"#00c4cc"}>
               02
             </Text>
@@ -44,7 +44,7 @@ export default function Availability() {
               width={200}
             />
           </VStack>
-          <VStack paddingX={20}>
+          <VStack paddingX={12}>
             <Text as="b" fontSize={46} color={"#00c4cc"}>
               03
             </Text>
