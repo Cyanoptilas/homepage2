@@ -20,12 +20,15 @@ import {
 
 import { useState } from "react";
 import Annotation1 from "@/components/lv1/annotation1";
+import FloatingButtonTrial from "@/components/lv1/floating_button_trial";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <ChakraProvider>
+      <FloatingButtonTrial />
+
       <WithSubnavigation />
       <VStack align={"center"} background={"white"}>
         <Top />
@@ -41,7 +44,6 @@ export default function Home() {
         <Box height={10} />
         <Availability />
         <Box height={10} />
-
       </VStack>
     </ChakraProvider>
   );

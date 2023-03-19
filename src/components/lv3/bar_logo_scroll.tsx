@@ -9,7 +9,6 @@ import {
   keyframes,
   usePrefersReducedMotion,
 } from "@chakra-ui/react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const ScrollAnimation = keyframes`
   from {
