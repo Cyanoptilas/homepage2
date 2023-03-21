@@ -144,10 +144,10 @@ const DesktopNav = () => {
                 p={4}
               >
                 {/* <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack> */}
+                    {navItem.children.map((child) => (
+                      <DesktopSubNav key={child.label} {...child} />
+                    ))}
+                  </Stack> */}
                 <Container bg="blue.600" color="white">
                   Todo SubMenu実装
                 </Container>

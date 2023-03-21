@@ -8,7 +8,6 @@ import {
   VStack,
   Button,
 } from "@chakra-ui/react";
-import NextImage from "next/image";
 
 export default function Top() {
   return (

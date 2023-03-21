@@ -1,26 +1,17 @@
 "use client";
 
-import {
-  Box,
-  ChakraProvider,
-  Heading,
-  Text,
-  useColorModeValue,
-  VStack,
-} from "@chakra-ui/react";
-// import { Top, Navbar2 } from "@/components/export";
-import {
-  Top,
-  WithSubnavigation,
-  BarNo1,
-  BarLogoScroll,
-  BarServiceOutline,
-  Availability,
-} from "@/components/lv3/export";
+import Availability from "@/components/availability";
+import BarServiceOutline from "@/components/bar_service_outline";
+import FloatingButtonTrial from "@/components/floating_button_trial";
+import Annotation1 from "@/components/main/annotation";
+import BarLogoScroll from "@/components/main/bar_logo_scroll";
+import BarNo1 from "@/components/main/bar_no1";
+import Top from "@/components/main/top";
+import Subnavigation from "@/components/nav_ber";
+
+import { Box, ChakraProvider, VStack } from "@chakra-ui/react";
 
 import { useState } from "react";
-import Annotation1 from "@/components/lv1/annotation1";
-import FloatingButtonTrial from "@/components/lv1/floating_button_trial";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -29,7 +20,7 @@ export default function Home() {
     <ChakraProvider>
       <FloatingButtonTrial />
 
-      <WithSubnavigation />
+      <Subnavigation />
       <VStack align={"center"} background={"white"}>
         <Top />
         <Box height={5} />

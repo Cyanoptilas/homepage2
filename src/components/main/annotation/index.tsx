@@ -3,9 +3,7 @@ import { Box, Text } from "@chakra-ui/react";
 export default function Annotation1() {
   return (
     <>
-      <Box maxWidth={1200}
-      paddingTop={5}
-      paddingBottom={5}>
+      <Box maxWidth={1200} paddingTop={5} paddingBottom={5}>
         <Text fontSize={"xs"}>
           ※1
           SmartHR上で事業所登録を完了しているテナント数（但し、退会処理を行ったテナント数を除く）※2
