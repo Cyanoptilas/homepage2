@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
-export default function FloatingButtonTrial() {
+function FloatingButtonTrial() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -39,3 +39,5 @@ export default function FloatingButtonTrial() {
     </>
   );
 }
+
+export { FloatingButtonTrial };

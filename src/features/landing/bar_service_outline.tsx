@@ -8,7 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-export default function BarServiceOutline() {
+function BarServiceOutline() {
   return (
     <>
       <Box
@@ -69,3 +69,5 @@ export default function BarServiceOutline() {
     </>
   );
 }
+
+export { BarServiceOutline };

@@ -1,6 +1,6 @@
 import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
 
-export default function Availability() {
+function Availability() {
   return (
     <Box>
       <VStack>
@@ -67,3 +67,5 @@ export default function Availability() {
     </Box>
   );
 }
+
+export { Availability };

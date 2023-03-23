@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
-export default function Annotation1() {
+function Annotation() {
   return (
     <>
       <Box maxWidth={1200} paddingTop={5} paddingBottom={5}>
@@ -16,3 +16,5 @@ export default function Annotation1() {
     </>
   );
 }
+
+export { Annotation };

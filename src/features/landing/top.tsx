@@ -9,7 +9,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-export default function Top() {
+function Top() {
   return (
     <>
       <Box
@@ -96,3 +96,5 @@ export default function Top() {
     </>
   );
 }
+
+export { Top };

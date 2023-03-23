@@ -54,3 +54,5 @@ export default function BarNo1() {
     </>
   );
 }
+
+export { BarNo1 };
