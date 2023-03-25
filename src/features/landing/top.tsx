@@ -8,6 +8,7 @@ import {
   VStack,
   Button,
 } from "@chakra-ui/react";
+import { Button1 } from "../ui";
 
 function Top() {
   return (
@@ -48,36 +49,26 @@ function Top() {
               人材マネジメントまで！
             </Text>
             <HStack>
-              <Button
-                as={"a"}
-                size={"lg"}
-                paddingLeft={"10"}
-                paddingRight={"10"}
-                fontSize={"sm"}
-                fontWeight={600}
-                color={"black"}
-                bg={"white"}
-                rounded={100}
-                href={"#"}
-                _hover={{}}
-              >
-                無料で試してみる
-              </Button>
-              <Button
-                as={"a"}
-                size={"lg"}
-                paddingLeft={"10"}
-                paddingRight={"10"}
-                fontSize={"sm"}
-                fontWeight={600}
-                color={"white"}
-                bg={"orange"}
-                rounded={100}
-                href={"#"}
-                _hover={{}}
-              >
-                資料ダウンロード
-              </Button>
+              <Button1
+                buttonColor="white"
+                text="無料で試してみる"
+                textColor="black"
+                url=""
+                hover={{
+                  top: "-1px",
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                }}
+              />
+              <Button1
+                buttonColor="orange"
+                text="資料ダウンロード"
+                textColor="white"
+                url=""
+                hover={{
+                  top: "-1px",
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                }}
+              />
             </HStack>
           </VStack>
 

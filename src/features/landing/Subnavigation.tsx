@@ -26,87 +26,88 @@ function Subnavigation() {
   // } = useDisclosure();
 
   return (
-    <Box>
-      <Flex
-        bg={useColorModeValue("#00c4cc", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("#00c4cc", "gray.900")}
-        align={"center"}
-      >
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          {isOpen ? (
-            <Image
-              src="/image/logo/logo.svg"
-              alt="SmartHR Logo"
-              style={{ marginLeft: 15 }}
-            />
-          ) : (
-            <Image
-              src="/image/logo/logo_white.svg"
-              alt="SmartHR Logo"
-              style={{ marginLeft: 15 }}
-            />
-          )}
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
+    <Flex
+      bg={useColorModeValue("#00c4cc", "gray.800")}
+      color={useColorModeValue("gray.600", "white")}
+      minH={"60px"}
+      py={{ base: 2 }}
+      px={{ base: 4 }}
+      borderBottom={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("#00c4cc", "gray.900")}
+      align={"center"}
+    >
+      <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        {isOpen ? (
+          <Image
+            src="/image/logo/logo.svg"
+            alt="SmartHR Logo"
+            style={{ marginLeft: 15 }}
+          />
+        ) : (
+          <Image
+            src="/image/logo/logo_white.svg"
+            alt="SmartHR Logo"
+            style={{ marginLeft: 15 }}
+          />
+        )}
+        <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <DesktopNav />
         </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={950}
-            color={"white"}
-            variant={"link"}
-            href={"#"}
-          >
-            ログイン
-          </Button>
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"black"}
-            bg={"white"}
-            rounded={100}
-            href={"#"}
-            _hover={{
-              shadow: 10000,
-            }}
-          >
-            お問い合わせ
-          </Button>
-
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"orange"}
-            rounded={100}
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            お役立ち資料
-          </Button>
-        </Stack>
       </Flex>
-    </Box>
+
+      <Stack
+        flex={{ base: 1, md: 0 }}
+        justify={"flex-end"}
+        direction={"row"}
+        spacing={6}
+      >
+        <Button
+          as={"a"}
+          fontSize={"sm"}
+          fontWeight={950}
+          color={"white"}
+          variant={"link"}
+          href={"#"}
+        >
+          ログイン
+        </Button>
+        <Button
+          as={"a"}
+          display={{ base: "none", md: "inline-flex" }}
+          fontSize={"sm"}
+          fontWeight={600}
+          color={"black"}
+          bg={"white"}
+          rounded={100}
+          href={"#"}
+          _hover={{
+            shadow: 10000,
+          }}
+        >
+          お問い合わせ
+        </Button>
+
+        <Button
+          as={"a"}
+          display={{ base: "none", md: "inline-flex" }}
+          fontSize={"sm"}
+          fontWeight={600}
+          color={"white"}
+          bg={"orange"}
+          rounded={100}
+          href={"#"}
+          _hover={{
+            bg: "pink.300",
+          }}
+          _after={{
+            class: "fas fa-angle-up",
+          }}
+        >
+          お役立ち資料
+        </Button>
+      </Stack>
+    </Flex>
   );
 }
 
