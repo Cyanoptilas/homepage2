@@ -24,7 +24,6 @@ function Button1({ buttonColor, text, textColor, url, hover }: Props) {
       position="relative"
       href={url}
       _hover={hover}
-      border={useColorModeValue("#00c4cc", "gray.900")}
     >
       {text}
     </Button>

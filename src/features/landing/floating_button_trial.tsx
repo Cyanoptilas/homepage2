@@ -26,12 +26,13 @@ function FloatingButtonTrial() {
 
   return (
     <>
-      <Link href="/#top">
+      <Link  href="/#top">
         <Box
           position="fixed"
           bottom="150px"
           right={scrollPosition > 400 ? "0px" : "-70px"}
           transition="0.3s"
+          zIndex={"overlay"}
         >
           <Image src="image/character/banner-follow-trial.svg" alt="flt" />
         </Box>

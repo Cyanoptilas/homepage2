@@ -31,6 +31,7 @@ function BarLogoScroll() {
         height={100}
         animation={myScrollAnimation}
         background="white"
+        zIndex={"base"}
       >
         <HStack>
           <Image
