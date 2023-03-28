@@ -17,7 +17,7 @@ import { createContext } from "react";
 
 const toggleContext = createContext(false);
 
-function Subnavigation() {
+function SubNavigation() {
   const { isOpen, onToggle } = useDisclosure();
   // const {
   //   isOpen: isMenuOpen,
@@ -266,4 +266,4 @@ const NAV_ITEMS: Array<NavItem> = [
   },
 ];
 
-export { Subnavigation };
+export { SubNavigation };

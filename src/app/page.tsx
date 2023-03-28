@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, ChakraProvider, VStack } from "@chakra-ui/react";
+import { Box, ChakraProvider, Flex, VStack } from "@chakra-ui/react";
 
 import { useState } from "react";
 import {
@@ -27,7 +27,10 @@ export default function Home() {
         <Box height={5} />
         <BarNo1 />
         <Box height={5} />
-        <BarLogoScroll />
+        <Flex width={1000
+        }>
+          <BarLogoScroll />
+        </Flex>
         <Annotation />
       </VStack>
       <VStack align={"center"} background={"blackAlpha.100"}>
