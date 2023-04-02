@@ -10,7 +10,7 @@ import {
   BarNo1,
   BarServiceOutline,
   FloatingButtonTrial,
-  Subnavigation,
+  SubNavigation,
   Top,
 } from "../features/index";
 
@@ -21,14 +21,13 @@ export default function Home() {
     <ChakraProvider>
       <FloatingButtonTrial />
 
-      <Subnavigation />
+      <SubNavigation />
       <VStack align={"center"} background={"white"}>
         <Top />
         <Box height={5} />
         <BarNo1 />
         <Box height={5} />
-        <Flex width={1000
-        }>
+        <Flex width={1000}>
           <BarLogoScroll />
         </Flex>
         <Annotation />
