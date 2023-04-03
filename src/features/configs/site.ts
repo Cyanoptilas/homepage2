@@ -1,4 +1,41 @@
-export const siteConfig = {
+interface siteConfig {
+  name: string;
+  description: string;
+  mainNav: {
+    title: string;
+    href: string;
+  }[];
+  menuItems1AboutSmartHR: {
+    title: string;
+    href: string;
+    items?: {
+      title: string;
+      href: string;
+    }[];
+  }[];
+  menuItems2Function: {
+    title: string;
+    href: string;
+    items?: {
+      title: string;
+      href: string;
+    }[];
+  }[];
+  menuItems3Cost: {
+    title: string;
+    href: string;
+  }[];
+  menuItems4Examples: {
+    title: string;
+    href: string;
+  }[];
+  menuItems5News: {
+    title: string;
+    href: string;
+  }[];
+}
+
+export const siteConfig: siteConfig = {
   name: "SmartHR",
   description: "課題アプリ作り",
   mainNav: [
