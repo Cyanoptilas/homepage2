@@ -19,11 +19,6 @@ const toggleContext = createContext(false);
 
 function SubNavigation() {
   const { isOpen, onToggle } = useDisclosure();
-  // const {
-  //   isOpen: isMenuOpen,
-  //   onOpen: onMenuOpen,
-  //   onClose: onMenuClose,
-  // } = useDisclosure();
 
   return (
     <Flex
