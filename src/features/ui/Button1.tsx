@@ -1,5 +1,4 @@
-import { Button, SystemStyleObject, useColorModeValue } from "@chakra-ui/react";
-import { Children } from "react";
+import { Button, SystemStyleObject } from "@chakra-ui/react";
 
 type Props = {
   buttonColor: string;
