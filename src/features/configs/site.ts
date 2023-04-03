@@ -7,13 +7,7 @@ interface siteConfig {
 interface IMenuItem {
   title: string;
   href: string;
-  items?: IMenuSubItems[];
-}
-
-interface IMenuSubItems {
-  title: string;
-  href: string;
-  items?: IMenuSubItems[];
+  items?: IMenuItem[];
 }
 
 export const siteConfig: siteConfig = {
