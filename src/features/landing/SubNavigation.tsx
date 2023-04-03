@@ -13,6 +13,8 @@ import {
   Image,
   Container,
 } from "@chakra-ui/react";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { createContext } from "react";
 
 const toggleContext = createContext(false);
@@ -128,7 +130,8 @@ const DesktopNav = () => {
                   color: linkHoverColor,
                 }}
               >
-                {navItem.label}
+                {navItem.label}{" "}
+                <FontAwesomeIcon icon={faAngleDown} size={"xs"}/>
               </Link>
             </PopoverTrigger>
 
