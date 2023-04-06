@@ -14,9 +14,9 @@ function BarLogoScroll() {
   return (
     <Box width="100%" height="200px" overflow="hidden" position="relative">
       <Box
-        width="800%"
+        width="600%"
         display="flex"
-        animation={`${scrollAnimation} 22s linear infinite`}
+        animation={`${scrollAnimation} 40s linear infinite`}
       >
         <LogoImage />
         <LogoImage />
