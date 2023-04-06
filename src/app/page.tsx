@@ -35,9 +35,7 @@ export default function Home() {
         <Box height={5} />
         <BarNo1 />
         <Box height={5} />
-        <Flex width={1000}>
-          <BarLogoScroll />
-        </Flex>
+        <BarLogoScroll />
         <Annotation />
       </VStack>
       <VStack align={"center"} background={"blackAlpha.100"}>

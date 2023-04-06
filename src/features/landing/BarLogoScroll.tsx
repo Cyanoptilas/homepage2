@@ -1,55 +1,43 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Image,
-  position,
-  Text,
-  VStack,
-  keyframes,
-  usePrefersReducedMotion,
-} from "@chakra-ui/react";
+import React from "react";
+import { Box, Image, keyframes } from "@chakra-ui/react";
 
-const ScrollAnimation = keyframes`
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform:translateX(-100%);
-    }
-  `;
+const scrollAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`;
+
 function BarLogoScroll() {
-  const preferMotion = usePrefersReducedMotion();
-
-  const myScrollAnimation = preferMotion
-    ? undefined
-    : `${ScrollAnimation} 22s linear infinite`;
   return (
-    <>
+    <Box width="100%" height="200px" overflow="hidden" position="relative">
       <Box
-        width={4200}
-        height={100}
-        animation={myScrollAnimation}
-        background="white"
-        zIndex={"base"}
+        width="800%"
+        display="flex"
+        animation={`${scrollAnimation} 22s linear infinite`}
       >
-        <HStack>
-          <Image
-            src="/image/logo/logo-slide.png"
-            alt="ロゴスライド"
-            fit={"cover"}
-            align="left"
-          />
-          <Image
-            src="/image/logo/logo-slide.png"
-            alt="ロゴスライド"
-            fit={"cover"}
-            align="left"
-          />
-        </HStack>
+        <LogoImage />
+        <LogoImage />
       </Box>
-    </>
+    </Box>
+  );
+}
+
+function LogoImage() {
+  return (
+    <Image
+      src="/image/logo/logo-slide.png"
+      alt="ロゴスライド"
+      width="50%"
+      height="100%"
+      objectFit="cover"
+    />
   );
 }
 
 export { BarLogoScroll };
+
+// src="/image/logo/logo-slide.png"
+// alt="ロゴスライド"
