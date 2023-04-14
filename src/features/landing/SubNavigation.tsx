@@ -12,6 +12,7 @@ import {
   useDisclosure,
   Image,
   Container,
+  HStack,
 } from "@chakra-ui/react";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,7 +50,7 @@ function SubNavigation() {
           />
         )}
         <Flex display={{ base: "none", md: "flex" }} ml={10}>
-          <DesktopNav />
+          <MenuItems />
         </Flex>
       </Flex>
 
@@ -61,25 +62,34 @@ function SubNavigation() {
       >
         <Button
           as={"a"}
+          width={"70px"}
+          height={"32px"}
           fontSize={"sm"}
           fontWeight={950}
           color={"white"}
           variant={"link"}
           href={"#"}
+          transition="0.3s"
+          _hover={{
+            backgroundColor: "rgba(0,0,0,.1)",
+          }}
         >
           ログイン
         </Button>
         <Button
           as={"a"}
-          display={{ base: "none", md: "inline-flex" }}
+          width={"140px"}
+          height={"40px"}
           fontSize={"sm"}
           fontWeight={600}
           color={"black"}
+          border={"1px"}
+          borderColor={"gray.400"} //スクロールした時だけ
           bg={"white"}
           rounded={100}
-          href={"#"}
+          href={""}
           _hover={{
-            shadow: 10000,
+            boxShadow: "0 6px 9px 3px rgba(0,0,0,.14)",
           }}
         >
           お問い合わせ
@@ -87,7 +97,6 @@ function SubNavigation() {
 
         <Button
           as={"a"}
-          display={{ base: "none", md: "inline-flex" }}
           fontSize={"sm"}
           fontWeight={600}
           color={"white"}
@@ -95,20 +104,20 @@ function SubNavigation() {
           rounded={100}
           href={"#"}
           _hover={{
-            bg: "pink.300",
-          }}
-          _after={{
-            class: "fas fa-angle-up",
+            boxShadow: "0 4px 8px 2px rgba(0,0,0,.14)",
           }}
         >
           お役立ち資料
+          <Box paddingLeft={2}>
+            <FontAwesomeIcon icon={faAngleDown} size={"xs"} />
+          </Box>
         </Button>
       </Stack>
     </Flex>
   );
 }
 
-const DesktopNav = () => {
+const MenuItems = () => {
   const linkColor = useColorModeValue("white", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
@@ -131,57 +140,48 @@ const DesktopNav = () => {
                 }}
               >
                 {navItem.label}{" "}
-                <FontAwesomeIcon icon={faAngleDown} size={"xs"}/>
+                <FontAwesomeIcon icon={faAngleDown} size={"xs"} />
               </Link>
             </PopoverTrigger>
 
             {navItem.children && (
               <PopoverContent
-                border={1}
+                width={"1100px"}
+                height="400px"
                 boxShadow={"xl"}
                 bg={popoverContentBgColor}
-                p={4}
+                position="absolute"
+                left="-150px"
+                transitionDuration="0.1s"
+                zIndex={"overlay"}
               >
-                {/* <Stack>
-                      {navItem.children.map((child) => (
-                        <DesktopSubNav key={child.label} {...child} />
-                      ))}
-                    </Stack> */}
-                <Container bg="blue.600" color="white">
-                  Todo SubMenu実装
-                </Container>
+                <Box>
+                  <Container bg="blue.600" color="white">
+                    Todo SubMenu実装
+                  </Container>
+                </Box>
               </PopoverContent>
             )}
           </Popover>
         </Box>
       ))}
+      <Button
+        as={"a"}
+        width={"70px"}
+        height={"38px"}
+        fontSize={"sm"}
+        fontWeight={950}
+        color={"white"}
+        variant={"link"}
+        href={"#"}
+        transition="0.3s"
+        _hover={{
+          backgroundColor: "rgba(0,0,0,.1)",
+        }}
+      >
+        イベント
+      </Button>
     </Stack>
-  );
-};
-
-const DesktopSubNav = ({ label, href }: NavItem) => {
-  return (
-    <Link
-      href={href}
-      role={"group"}
-      display={"block"}
-      p={2}
-      rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-    >
-      <Stack direction={"row"} align={"center"}>
-        <Box>
-          <Text
-            color={"white"}
-            transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
-            {label}
-          </Text>
-        </Box>
-      </Stack>
-    </Link>
   );
 };
 
@@ -193,7 +193,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "smartHRとは",
+    label: "SmartHRとは",
     children: [
       {
         label: "smartHRの特徴",
