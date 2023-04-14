@@ -12,16 +12,8 @@ import {
 function BarServiceOutline() {
   return (
     <>
-      <Flex paddingTop="80px" maxWidth="100%" margin="0 auto 80px">
+      <Flex paddingTop="20px" maxWidth="100%" margin="0 auto 80px">
         <Flex
-          // height={470}
-          // maxWidth={"1280px"}
-          // background={"white"}
-          // FlexShadow="0 8px 20px rgba(0,0,0,.1)"
-          // paddingX={20}
-          // marginLeft={200}
-          // borderRadius="4px"
-          // overflow="clip"
           position="relative"
           width="1280px"
           marginLeft="-16px"
@@ -31,7 +23,7 @@ function BarServiceOutline() {
           boxShadow="0 8px 20px rgba(0,0,0,.1)"
         >
           <HStack align={"top"}>
-            <VStack align={"left"} minWidth={650}>
+            <VStack align={"left"} minWidth={650} paddingLeft={79}>
               <Heading as="h1" color="black" fontSize={32} paddingTop={10}>
                 SmartHRひとつで、
               </Heading>
@@ -56,7 +48,7 @@ function BarServiceOutline() {
                 も実現します。
               </Heading>
 
-              <Flex maxWidth={580} paddingTop={7}>
+              <Flex maxWidth={580} paddingTop={7} paddingBottom={10}>
                 <Text fontSize={"md"}>
                   人事・労務業務を効率化しながら自然と蓄まった人事データを一元管理。
                   <br />
@@ -73,17 +65,11 @@ function BarServiceOutline() {
               right="-244px"
               width="800px"
               height="450px"
+              overflow="clip"
             >
               <Image
                 src="/image/picture/img_service_outline.png"
                 alt="img_service_outline"
-                // width={"800px"}
-                // objectFit="contain"
-                // // style={{ marginTop: 28 }}
-                // // paddingTop={20}
-                // position="relative"
-                // top={50}
-                // left={70}
                 width="100%"
                 height="100%"
                 objectFit="contain"
@@ -92,20 +78,6 @@ function BarServiceOutline() {
           </HStack>
         </Flex>
       </Flex>
-      {/* <Flex
-        position="relative"
-        width="1280px"
-        marginLeft="-16px"
-        margin-right="100px"
-        background-color="#fff"
-        border-radius="4px"
-        Flex-shadow="0 8px 20px rgba(0,0,0,.1)"
-      >
-        <Image
-          src="/image/picture/img_service_outline.png"
-          alt="img_service_outline"
-        />
-      </Flex> */}
     </>
   );
 }
