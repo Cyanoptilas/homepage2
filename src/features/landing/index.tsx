@@ -5,4 +5,5 @@ export { BarNo1 } from "./BarNo1";
 export { BarServiceOutline } from "./BarServiceOutline";
 export { FloatingButtonTrial } from "./FloatingButtonTrial";
 export { SubNavigation } from "./SubNavigation";
+export { HeaderContainer } from "./HeaderContainer";
 export { Top } from "./Top";
