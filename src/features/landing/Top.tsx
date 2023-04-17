@@ -21,9 +21,6 @@ function Top() {
           width="100%"
           textAlign="center"
           overflow="hidden"
-          // backgroundPosition="center -10px"
-          // backgroundRepeat="repeat"
-          // backgroundSize="1562px 695px"
           height="600px"
           position="relative"
           zIndex="1"
@@ -31,7 +28,7 @@ function Top() {
           <HStack>
             <VStack
               justifyContent={"center"}
-              style={{ marginLeft: 180 }}
+              marginLeft="180"
               paddingTop="70px"
             >
               <Flex>
