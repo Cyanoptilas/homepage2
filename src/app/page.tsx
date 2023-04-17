@@ -31,7 +31,6 @@ export default function Home() {
       <FloatingButtonTrial />
 
       <HeaderContainer />
-      <SubNavigation />
       <VStack align={"center"} background={"white"}>
         <Top />
         <Box height={5} />
