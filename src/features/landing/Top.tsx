@@ -15,30 +15,32 @@ function Top() {
     <>
       <IsHoverProvider>
         <Box
-          bg={useColorModeValue("#00c4cc", "gray.800")}
-          color={useColorModeValue("gray.600", "white")}
-          // height={"500"}
-          maxH={"470"}
-          maxHeight={500}
-          width={"100%"}
-          borderColor={useColorModeValue("#00c4cc", "gray.900")}
+          boxSizing="border-box"
+          background="linear-gradient(150deg,#00c4cc 50%,#00c4cc 0,#00aeb8)"
+          color="#fff"
+          width="100%"
+          textAlign="center"
+          overflow="hidden"
+          // backgroundPosition="center -10px"
+          // backgroundRepeat="repeat"
+          // backgroundSize="1562px 695px"
+          height="600px"
+          position="relative"
+          zIndex="1"
         >
           <HStack>
             <VStack
-              align="center"
+              justifyContent={"center"}
               style={{ marginLeft: 180 }}
-              transform="translate(6%)"
+              paddingTop="70px"
             >
-              <Flex
-                flex={{ base: 1 }}
-                justify={{ base: "center", md: "start" }}
-              >
+              <Flex>
                 <Image
                   src="/image/character/syain-ni-ii.svg"
                   alt="syain-ni-ii"
-                  minW={300}
+                  minW="300"
                   objectFit="contain"
-                  style={{ marginTop: 25 }}
+                  marginTop="25"
                 />
               </Flex>
               <Flex maxW={340}>
