@@ -1,21 +1,15 @@
-import {
-  Box,
-  Button,
-  Flex,
-  List,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, List, ListItem } from "@chakra-ui/react";
 
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { siteConfig } from "@/features/configs/site";
 import { ButtonEvent } from "../ui/index";
+import { useWindowScroll } from "react-use";
 
 export default function HeaderNavLeft() {
+  const { x, y } = useWindowScroll();
+
   return (
     <Flex alignItems="center">
       <List listStyleType="none" display="flex">
@@ -29,7 +23,7 @@ export default function HeaderNavLeft() {
               fontSize="14.5px"
               height="14px"
               lineHeight="1"
-              color="#fff"
+              color={y > 80 ? "#777" : "#fff"}
               transition="color .3s ease"
               marginRight="28px"
             >

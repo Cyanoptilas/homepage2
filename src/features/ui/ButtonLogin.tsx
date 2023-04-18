@@ -1,6 +1,9 @@
 import { Button } from "@chakra-ui/react";
+import { useWindowScroll } from "react-use";
 
 function ButtonLogin() {
+  const { x, y } = useWindowScroll();
+
   return (
     <Button
       as={"a"}
@@ -9,7 +12,7 @@ function ButtonLogin() {
       marginRight={"16px"}
       fontSize={"sm"}
       fontWeight={950}
-      color={"white"}
+      color={y > 80 ? "#777" : "#fff"}
       variant={"link"}
       href={"#"}
       transition="0.3s"

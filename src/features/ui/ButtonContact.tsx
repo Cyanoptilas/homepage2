@@ -1,6 +1,9 @@
 import { Button } from "@chakra-ui/react";
+import { useWindowScroll } from "react-use";
 
 function ButtonContact() {
+  const { x, y } = useWindowScroll();
+
   return (
     <Button
       as={"a"}
@@ -10,9 +13,8 @@ function ButtonContact() {
       fontSize={"sm"}
       fontWeight={600}
       color={"black"}
-      border={"1px"}
-      borderColor={"white"}
-      // borderColor={"gray.400"} // hover, スクロールした時だけ
+      border={"2px solid #e5e5e5"}
+      borderColor={y > 80 ? "gray.400" : "white"}
       bg={"white"}
       rounded={100}
       href={"/"}

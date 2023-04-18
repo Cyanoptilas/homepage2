@@ -7,30 +7,18 @@ import {
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
+import { useWindowScroll } from "react-use";
+
 function FloatingButtonTrial() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const preferMotion = usePrefersReducedMotion();
+  const { x, y } = useWindowScroll();
 
   return (
     <>
-      <Link  href="/#top">
+      <Link href="/#top">
         <Box
           position="fixed"
           bottom="150px"
-          right={scrollPosition > 400 ? "0px" : "-70px"}
+          right={y > 80 ? "0px" : "-70px"}
           transition="0.3s"
           zIndex={"overlay"}
         >

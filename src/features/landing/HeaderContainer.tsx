@@ -2,18 +2,22 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { HeaderLogo } from "../ui/index";
 import { HeaderNav } from "./HeaderNav";
 
+import { useWindowScroll } from "react-use";
+
 export default function HeaderContainer() {
+  const { x, y } = useWindowScroll();
+
   return (
     <Box
       boxSizing="border-box"
-      background="#00c4cc"
       position="fixed"
       top="0"
       left="0"
       width="100vw"
       zIndex="1000"
-      backgroundColor="transparent"
-      transition="background-color .3s ease"
+      backgroundColor={y > 80 ? "white" : "transparent"}
+      transition="background-color 0.3s ease-in-out"
+      boxShadow={y > 80 ? "0 0 6px rgba(0,0,0,.24)" : "0"}
     >
       <Box
         maxWidth="1366px"
@@ -23,7 +27,7 @@ export default function HeaderContainer() {
         display="flex"
         alignItems="center"
       >
-        <HeaderLogo color="white" />
+        <HeaderLogo color={y > 80 ? "#00c4cc" : "white"} />
         <HeaderNav />
       </Box>
     </Box>

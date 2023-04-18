@@ -4,7 +4,6 @@ import {
   Text,
   HStack,
   Image,
-  useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 import { IsHoverProvider } from "../hooks/hover-context";
