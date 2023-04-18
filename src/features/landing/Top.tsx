@@ -21,7 +21,7 @@ function Top() {
           width="100%"
           textAlign="center"
           overflow="hidden"
-          height="600px"
+          height="540px"
           position="relative"
           zIndex="1"
         >
@@ -51,28 +51,29 @@ function Top() {
                 <br />
                 人材マネジメントまで！
               </Text>
-              <HStack>
-                <Button1
-                  buttonColor="white"
-                  text="無料で試してみる"
-                  textColor="black"
-                  url=""
-                  hover={{
-                    top: "-1px",
-                    boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
-                  }}
-                />
-                <Button1
-                  buttonColor="orange"
-                  text="資料ダウンロード"
-                  textColor="white"
-                  url=""
-                  hover={{
-                    top: "-1px",
-                    boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
-                  }}
-                />
-              </HStack>
+
+              <Button1
+                buttonColor="orange"
+                textSub="3点セットですぐわかる！"
+                textMain="資料ダウンロード"
+                textColor="white"
+                url=""
+                hover={{
+                  top: "-1px",
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                }}
+              />
+              <Button1
+                buttonColor="white"
+                textMain="無料で試してみる"
+                textColor="black"
+                url=""
+                hover={{
+                  top: "-1px",
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                }}
+              />
+              <HStack></HStack>
             </VStack>
 
             <Box width={"100%"} height={450} overflow="hidden">

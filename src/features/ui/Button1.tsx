@@ -1,30 +1,48 @@
-import { Button, SystemStyleObject } from "@chakra-ui/react";
+import { Button, SystemStyleObject, Text, VStack } from "@chakra-ui/react";
+import { text } from "stream/consumers";
 
 type Props = {
   buttonColor: string;
-  text: string;
+  textMain: string;
+  textSub?: string;
   textColor: string;
   url: string;
   hover: SystemStyleObject;
 };
 
-function Button1({ buttonColor, text, textColor, url, hover }: Props) {
+function Button1({
+  buttonColor,
+  textMain,
+  textSub,
+  textColor,
+  url,
+  hover,
+}: Props) {
   return (
     <Button
       as={"a"}
-      size={"lg"}
+      width={"280px"}
+      height={"50px"}
       paddingLeft={"10"}
       paddingRight={"10"}
-      fontSize={"sm"}
+      fontSize={"16px"}
       fontWeight={600}
       color={textColor}
       bg={buttonColor}
       rounded={100}
-      position="relative"
+      // overflowWrap="break-word"
       href={url}
       _hover={hover}
     >
-      {text}
+      <VStack>
+        {textSub ? (
+          <Text fontSize={"13px"}
+          marginBottom="-6px">
+            {textSub}
+          </Text>
+        ) : null}
+        <Text>{textMain}</Text>
+      </VStack>
     </Button>
   );
 }
