@@ -1,17 +1,11 @@
 "use client";
 
-import {
-  AspectRatio,
-  Box,
-  ChakraProvider,
-  HStack,
-  Image,
-} from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 
-export default function smarthr() {
+export default function About() {
   return (
     <ChakraProvider>
-      <h3>smarthrの特徴</h3>
+      <h3>smarthrの特徴?!</h3>
     </ChakraProvider>
   );
 }
