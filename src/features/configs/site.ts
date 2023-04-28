@@ -5,6 +5,7 @@ interface siteConfig {
 }
 
 interface IMenuItem {
+  id?: string;
   title: string;
   href: string;
   items?: IMenuItem[];
@@ -15,6 +16,7 @@ export const siteConfig: siteConfig = {
   description: "課題アプリ作り",
   mainNav: [
     {
+      id: "1",
       title: "SmartHRとは",
       href: "/",
       items: [
@@ -32,6 +34,7 @@ export const siteConfig: siteConfig = {
       ],
     },
     {
+      id: "2",
       title: "機能",
       href: "/",
       items: [
@@ -72,6 +75,7 @@ export const siteConfig: siteConfig = {
       ],
     },
     {
+      id: "3",
       title: "料金",
       href: "/",
       items: [
@@ -86,6 +90,7 @@ export const siteConfig: siteConfig = {
       ],
     },
     {
+      id: "4",
       title: "導入事例",
       href: "/",
       items: [
@@ -100,6 +105,7 @@ export const siteConfig: siteConfig = {
       ],
     },
     {
+      id: "5",
       title: "お知らせ",
       href: "/",
       items: [
