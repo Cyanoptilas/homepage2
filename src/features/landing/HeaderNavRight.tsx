@@ -9,7 +9,6 @@ export default function HeaderNavRight() {
 
         <ButtonContact />
         <ButtonUsefulDocs />
-      
       </Flex>
     </Box>
   );

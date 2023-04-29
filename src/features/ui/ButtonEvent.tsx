@@ -1,8 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import { useWindowScroll } from "react-use";
+import { useHoveredMenuItem } from "../landing/HeaderContainer";
 
 function ButtonEvent() {
   const { x, y } = useWindowScroll();
+  const [value, setValue] = useHoveredMenuItem();
 
   return (
     <Box
@@ -11,8 +13,8 @@ function ButtonEvent() {
       fontWeight="700"
       fontSize="14px"
       height="35px"
-      lineHeight="1"
-      color={y > 80 ? "#777" : "#fff"}
+      marginBottom={"2px"}
+      color={y > 80 || value != "0" ? "#777" : "#fff"}
       transition="color .3s ease"
       padding="8px 5px"
       borderRadius="4px"
@@ -20,6 +22,7 @@ function ButtonEvent() {
       _hover={{
         backgroundColor: "rgba(0,0,0,.1)",
       }}
+      onMouseOver={() => setValue("0")}
     >
       イベント
     </Box>

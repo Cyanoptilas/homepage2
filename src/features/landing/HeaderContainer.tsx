@@ -2,10 +2,18 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { HeaderLogo } from "../ui/index";
 import { HeaderNav } from "./HeaderNav";
 
-import { useWindowScroll } from "react-use";
+import {
+  createGlobalState,
+  createStateContext,
+  useWindowScroll,
+} from "react-use";
+import SubMenuContainer from "./SubMenuContainer";
+
+export const useHoveredMenuItem = createGlobalState<string>("0");
 
 export default function HeaderContainer() {
   const { x, y } = useWindowScroll();
+  const [value, setValue] = useHoveredMenuItem();
 
   return (
     <Box
@@ -15,7 +23,7 @@ export default function HeaderContainer() {
       left="0"
       width="100vw"
       zIndex="1000"
-      backgroundColor={y > 80 ? "white" : "transparent"}
+      backgroundColor={y > 80 || value != "0" ? "white" : "transparent"}
       transition="background-color 0.3s ease-in-out"
       boxShadow={y > 80 ? "0 0 6px rgba(0,0,0,.24)" : "0"}
     >
@@ -27,9 +35,10 @@ export default function HeaderContainer() {
         display="flex"
         alignItems="center"
       >
-        <HeaderLogo color={y > 80 ? "#00c4cc" : "white"} />
+        <HeaderLogo color={y > 80 || value != "0" ? "#00c4cc" : "white"} />
         <HeaderNav />
       </Box>
+      {value != "0" ? <SubMenuContainer /> : null}
     </Box>
   );
 }

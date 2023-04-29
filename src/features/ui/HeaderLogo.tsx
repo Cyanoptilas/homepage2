@@ -1,10 +1,13 @@
 import { Box } from "@chakra-ui/react";
+import { useHoveredMenuItem } from "../landing/HeaderContainer";
 
 type Props = {
   color: string;
 };
 
 function HeaderLogo({ color }: Props) {
+  const [value, setValue] = useHoveredMenuItem();
+
   return (
     <Box marginRight="32px">
       <svg
