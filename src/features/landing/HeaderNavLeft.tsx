@@ -1,4 +1,4 @@
-import { Flex, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Flex, keyframes, List, ListItem, Text } from "@chakra-ui/react";
 
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +20,7 @@ export default function HeaderNavLeft() {
             <Flex key={item.title}>
               <ListItem
                 key={item.title}
-                display="block"
+                display="flex"
                 position="relative"
                 fontWeight="700"
                 fontSize="14.5px"
@@ -30,9 +30,22 @@ export default function HeaderNavLeft() {
                 transition="color .3s ease"
                 marginRight="28px"
                 onMouseOver={() => setValue(item.id!)}
+                _before={{
+                  content: "''",
+                  position: "absolute",
+                  bottom: "-30px",
+                  width: "100%",
+                  zIndex: "2",
+                  height: "4px",
+                  backgroundColor: "#00c4cc",
+                  transition: "transform 0.3s ease-in-out",
+                  transform: item.id === value ? "scaleX(1)" : "scaleX(0)",
+                }}
               >
                 {item.title}
-                <FontAwesomeIcon icon={faAngleDown} size={"xs"} />
+                <Box marginLeft="8px">
+                  <FontAwesomeIcon icon={faAngleDown} size={"xs"} />
+                </Box>
               </ListItem>
             </Flex>
           );

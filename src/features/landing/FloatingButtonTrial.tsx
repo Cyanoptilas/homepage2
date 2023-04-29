@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  keyframes,
-  Link,
-  usePrefersReducedMotion,
-} from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { Box, Image, Link } from "@chakra-ui/react";
 
 import { useWindowScroll } from "react-use";
 

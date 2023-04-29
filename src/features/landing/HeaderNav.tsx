@@ -1,6 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-import { createContext, useState } from "react";
-import { useHoveredMenuItem } from "./HeaderContainer";
 import HeaderNavLeft from "./HeaderNavLeft";
 import HeaderNavRight from "./HeaderNavRight";
 
