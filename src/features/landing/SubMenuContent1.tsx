@@ -9,20 +9,13 @@ function SubMenuContent1() {
   const subMenuIndex = "1";
 
   const [hoveredNo1, setHoveredNo1] = useState(-1);
-  const [hoveredNo2, setHoveredNo2] = useState(-1);
 
   const items = siteConfig.mainNav[parseInt(subMenuIndex) - 1].items!;
 
   if (value === subMenuIndex) {
     return (
-      <Box //lists container
-        outline="0"
-        textDecoration="none"
-      >
-        <Box // list1
-        // backgroundColor={"red"}
-        // display="flex"
-        >
+      <Box outline="0" textDecoration="none">
+        <Box>
           {items.map((item, index) => {
             return (
               <>
@@ -42,7 +35,7 @@ function SubMenuContent1() {
                       lineHeight="1"
                       paddingRight="28px"
                       textDecoration="none"
-                      color={hoveredNo1 === index ? "#00c4cc" : "#4c4c4c"} //#00c4cc
+                      color={hoveredNo1 === index ? "#00c4cc" : "#4c4c4c"}
                       transition="color .2s"
                       onMouseEnter={() => setHoveredNo1(index)}
                       onMouseLeave={() => setHoveredNo1(-1)}
@@ -91,7 +84,6 @@ function SubMenuContent1() {
                                 paddingLeft="16px"
                                 fontWeight="400"
                                 fontSize="14px"
-                                // lineHeight="1.5"
                                 color="#4c4c4c"
                                 paddingBottom="2px"
                                 backgroundImage="linear-gradient(#00c4cc,#00c4cc)"
@@ -144,73 +136,3 @@ function SubMenuContent1() {
   }
 }
 export { SubMenuContent1 };
-{
-  /* <List>
-            {siteConfig.mainNav[0].items![0].items!.map((item, index) => {
-              return (
-                <ListItem key={index + item.title}>
-                  <Text>
-                    {item.title.split(/(\n)/).map((item, index) => {
-                      return (
-                        <React.Fragment key={index}>
-                          {item.match(/\n/) ? <br /> : item}
-                        </React.Fragment>
-                      );
-                    })}
-                  </Text>
-                </ListItem>
-              );
-            })}
-          </List> */
-}
-{
-  /* <List>
-  {siteConfig.mainNav[parseInt(subMenuIndex) - 1].items!.map((item: any) => {
-    return (
-      <Flex key={item.title}>
-        <ListItem key={item.title}>
-          <Box
-            margin="0 0 20px"
-            fontSize="14px"
-            fontWeight="700"
-            lineHeight="1"
-          >
-            <Link>
-              <Box
-                position="relative"
-                fontWeight="700"
-                lineHeight="1"
-                paddingRight="28px"
-                color="#4c4c4c"
-                transition="color .2s"
-                _before={{
-                  content: "''",
-                  position: "absolute",
-                  width: "20px",
-                  height: "20px",
-                  // top: "50%",
-                  right: "0",
-                  // transform: "translateY(-50%)",
-                  margin: "1px 0 0",
-                  backgroundImage:
-                    "url(/image/picture/icon_arrowRight_blue.svg)",
-                  backgroundPosition: "50%",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-
-                  onHover: {
-                    transition: "right .2s",
-                    color: "#00c4cc",
-                  },
-                }}
-              >
-                {item.title}
-              </Box>
-            </Link>
-          </Box>
-        </ListItem>
-      </Flex>
-    );
-  })}
-</List>; */
-}

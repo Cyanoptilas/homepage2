@@ -15,18 +15,18 @@ function SubMenuContent6() {
               width="340px"
               height="280px"
               background="skyblue"
-              position="relative"
+              display="grid"
+              gridTemplateColumns={"100px 100px 100px 100px"}
+              gridTemplateRows={"100px 100px 100px 100px"}
+              gridGap="3px"
             >
               <NextLink href="/about"></NextLink>
-              <Flex
-                as="a"
-                width="110px"
-                height="100px"
-                background="pink"
-                position="absolute"
-                top="5px"
-                left="55px"
-              ></Flex>
+              <Flex width="100px" height="100px" background="pink"></Flex>
+              <Flex width="100px" height="100px" background="orange"></Flex>
+              <Flex width="100px" height="100px" background="turquoise"></Flex>
+              <Flex width="100px" height="100px" background="yellow"></Flex>
+              <Flex width="100px" height="100px" background="purple"></Flex>
+              <Flex width="100px" height="100px" background="pink"></Flex>
             </Flex>
           </Link>
           <Link>
