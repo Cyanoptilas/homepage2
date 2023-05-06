@@ -18,19 +18,20 @@ export const siteConfig: siteConfig = {
     {
       id: "1",
       title: "SmartHRとは",
-      href: "/",
+      href: "",
       items: [
         {
           title: "SmartHRの特徴",
-          href: "",
+          href: "https://smarthr.jp/smarthr/",
           items: [
-            { title: "SmartHRで始める人材マネジメント", href: "" },
-            { title: "SmartHRで業務はどう変わる？", href: "" },
-            { title: "充実のサポート", href: "" },
-            { title: "豊富な外部連携サービス", href: "" },
+            { title: "SmartHRで始める\n人材マネジメント", href: "https://smarthr.jp/hr-management/" },
+            { title: "SmartHRで\n業務はどう変わる？", href: "https://smarthr.jp/hr-management/" },
+            { title: "充実のサポート", href: "https://smarthr.jp/support-contents/" },
+            { title: "安心のセキュリティ", href: "https://smarthr.jp/security/" },
+            { title: "豊富な外部連携サービス", href: "https://smarthr.jp/function/cooperation/" },
           ],
         },
-        { title: "SmartHRの想い", href: "" },
+        { title: "SmartHRの想い", href: "https://smarthr.jp/servicevision/" },
       ],
     },
     {

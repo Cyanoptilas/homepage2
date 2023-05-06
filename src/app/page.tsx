@@ -20,11 +20,12 @@ import { siteConfig } from "@/features/configs/site";
 // This ensures that the icon CSS is loaded immediately before attempting to render icons
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
 config.autoAddCss = false;
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [value, setValue] = useHoveredMenuItem();
 
   return (
     <ChakraProvider>
@@ -32,12 +33,14 @@ export default function Home() {
 
       <HeaderContainer />
       <VStack align={"center"} background={"white"}>
-        <Top />
-        <Box height={5} />
-        <BarNo1 />
-        <Box height={5} />
-        <BarLogoScroll />
-        <Annotation />
+        <Box onMouseEnter={() => setValue("0")}>
+          <Top />
+          <Box height={5} />
+          <BarNo1 />
+          <Box height={5} />
+          <BarLogoScroll />
+          <Annotation />
+        </Box>
       </VStack>
       <VStack align={"center"} background={"blackAlpha.100"}>
         <Box height={20} />
