@@ -127,8 +127,6 @@ function SubMenuContent1() {
             );
           })}
         </Box>
-        <Box // list2
-        ></Box>
       </Box>
     );
   } else {
