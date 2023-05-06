@@ -22,8 +22,8 @@ export default function HeaderNavLeft() {
                 key={item.title}
                 display="flex"
                 position="relative"
-                fontWeight="700"
-                fontSize="14.5px"
+                fontWeight="600"
+                fontSize="14px"
                 height="14px"
                 lineHeight="1"
                 color={y > 80 || value != "0" ? "#777" : "white"}

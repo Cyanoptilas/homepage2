@@ -2,7 +2,6 @@
 
 import { Box, ChakraProvider, Flex, VStack } from "@chakra-ui/react";
 
-import { useState } from "react";
 import {
   Annotation,
   Availability,
@@ -10,17 +9,15 @@ import {
   BarNo1,
   BarServiceOutline,
   FloatingButtonTrial,
-  SubNavigation,
   HeaderContainer,
   Top,
 } from "../features/index";
-
-import { siteConfig } from "@/features/configs/site";
 
 // This ensures that the icon CSS is loaded immediately before attempting to render icons
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
+import customTheme from "@/features/configs/CustomTheme";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
 config.autoAddCss = false;
 
@@ -28,7 +25,7 @@ export default function Home() {
   const [value, setValue] = useHoveredMenuItem();
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={customTheme}>
       <FloatingButtonTrial />
 
       <HeaderContainer />
