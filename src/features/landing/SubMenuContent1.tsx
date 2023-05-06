@@ -69,13 +69,12 @@ function SubMenuContent1() {
                 </Box>
 
                 {item.items ? (
-                  <Box
-                    marginLeft="16px"
-                    display="grid"
-                    gridTemplateColumns="184px 184px 184px 184px"
-                    gap="12px 48px"
-                  >
-                    <List>
+                  <Box marginLeft="16px">
+                    <List
+                      display="grid"
+                      gridTemplateColumns="184px 184px 184px 184px"
+                      gap="12px 48px"
+                    >
                       {item.items.map((item, index) => {
                         return (
                           <ListItem
