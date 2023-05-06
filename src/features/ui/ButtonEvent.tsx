@@ -13,7 +13,8 @@ function ButtonEvent() {
       fontWeight="700"
       fontSize="14px"
       height="35px"
-      marginBottom={"2px"}
+      lineHeight="5"
+      marginBottom="1px"
       color={y > 80 || value != "0" ? "#777" : "#fff"}
       transition="color .3s ease"
       padding="8px 5px"
