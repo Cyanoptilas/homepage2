@@ -1,0 +1,35 @@
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import { useHoveredMenuItem } from "../HeaderContainer";
+import { SubMenuContainerInner } from "./SubMenuContainerInner";
+
+export default function SubMenuContainer() {
+  const [value, setValue] = useHoveredMenuItem();
+
+  return (
+    <Box // megaMenu__inner
+      height={
+        value === "0"
+          ? "0"
+          : value === "1"
+          ? "268px"
+          : value === "2"
+          ? "440px"
+          : value === "6"
+          ? "336px"
+          : "102px"
+      }
+      width="100vw"
+      borderTop="2px solid #f4f8f9"
+      position="fixed"
+      top={value != "0" ? "72px" : "0"}
+      backgroundColor="#fff"
+      overflow="hidden"
+      boxShadow="0 0 6px rgba(0,0,0,.24)"
+      zIndex="999"
+      transition="all 0.3s ease-in-out"
+    >
+      <SubMenuContainerInner />
+    </Box>
+  );
+}

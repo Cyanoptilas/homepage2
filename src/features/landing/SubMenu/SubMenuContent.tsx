@@ -1,10 +1,9 @@
 import { Box, Flex, List, ListItem } from "@chakra-ui/react";
-import { siteConfig } from "../configs/site";
-import { useHoveredMenuItem } from "./HeaderContainer";
+import { siteConfig } from "@/features/configs/site";
+import { useHoveredMenuItem } from "../HeaderContainer";
 
 function SubMenuContent({ subMenuIndex }: { subMenuIndex: string }) {
   const [value, setValue] = useHoveredMenuItem();
-  //   const subMenuIndex = "1";
 
   return (
     <Box
@@ -37,7 +36,6 @@ function SubMenuContent({ subMenuIndex }: { subMenuIndex: string }) {
                       height: "2px",
                       backgroundColor: "#00c4cc",
                       transition: "width 0.3s ease-in-out",
-                      // transform: item.id === value ? "scaleX(1)" : "scaleX(0)",
                     }}
                   >
                     {item.title}
@@ -46,9 +44,6 @@ function SubMenuContent({ subMenuIndex }: { subMenuIndex: string }) {
               );
             })}
           </List>
-          {/* {siteConfig.mainNav[0].items![0].title}
-        {siteConfig.mainNav[0].items![1].title}
-        {siteConfig.mainNav[0].items!.map((item: any) => {}} */}
         </Box>
       )}
     </Box>

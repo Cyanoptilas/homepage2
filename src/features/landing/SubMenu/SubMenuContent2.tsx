@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Box, Flex, Link, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { siteConfig } from "../configs/site";
-import { useHoveredMenuItem } from "./HeaderContainer";
+import { siteConfig } from "../../configs/site";
+import { useHoveredMenuItem } from "../HeaderContainer";
 
 function SubMenuContent2() {
-  // function SubMenuContent1({subMenuIndex}:{subMenuIndex: string}) {
   const [value, setValue] = useHoveredMenuItem();
   const subMenuIndex = "2";
   const [hoveredNo1, setHoveredNo1] = useState(-1);
@@ -13,9 +12,11 @@ function SubMenuContent2() {
   const items = siteConfig.mainNav[parseInt(subMenuIndex) - 1].items!;
 
   if (value === subMenuIndex) {
+    const index = 1;
     return (
       <Flex outline="0" textDecoration="none">
         <Flex // List Title
+          fontSize="20px"
           flexShrink="0"
           display="flex"
           flexDirection="column"
@@ -24,15 +25,13 @@ function SubMenuContent2() {
           <NextLink href="https://smarthr.jp/function/">
             <Text
               as="a"
-              fontSize="20px"
               position="relative"
               fontWeight="700"
               lineHeight="1"
-              paddingRight="28px"
               textDecoration="none"
               color={hoveredNo1 === 1 ? "#00c4cc" : "#4c4c4c"}
               transition="color .2s"
-              onMouseEnter={() => setHoveredNo1(1)}
+              onMouseEnter={() => setHoveredNo1(index)}
               onMouseLeave={() => setHoveredNo1(-1)}
               _before={{
                 content: "''",
@@ -40,7 +39,7 @@ function SubMenuContent2() {
                 width: "20px",
                 height: "20px",
                 top: "50%",
-                right: hoveredNo1 === 1 ? "-12px" : "0px",
+                right: hoveredNo1 === index ? "-12px" : "0px",
                 transform: "translateY(-50%)",
                 margin: "1px 0 0",
                 backgroundImage: "url(/image/picture/icon_arrowRight_blue.svg)",

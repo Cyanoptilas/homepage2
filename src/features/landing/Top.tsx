@@ -63,14 +63,14 @@ function Top() {
           </VStack>
 
           <Box width={"100%"} height={450} overflow="hidden">
-            {/* <Image
+            <Image
                 src="/image/picture/img_home01.png"
                 alt="img_top"
                 fit={"cover"}
                 align="left"
                 width={700}
                 height={550}
-              /> */}
+              />
           </Box>
         </HStack>
       </Box>

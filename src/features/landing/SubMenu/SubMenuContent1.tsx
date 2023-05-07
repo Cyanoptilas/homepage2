@@ -1,14 +1,14 @@
 import { Box, Flex, Link, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React, { useState } from "react";
-import { siteConfig } from "../configs/site";
-import { useHoveredMenuItem } from "./HeaderContainer";
+import { siteConfig } from "../../configs/site";
+import { useHoveredMenuItem } from "../HeaderContainer";
 
 function SubMenuContent1() {
   const [value, setValue] = useHoveredMenuItem();
   const subMenuIndex = "1";
 
-  const [hoveredNo1, setHoveredNo1] = useState(-1);
+  const [hoveredNo, setHoveredNo] = useState(-1);
 
   const items = siteConfig.mainNav[parseInt(subMenuIndex) - 1].items!;
 
@@ -19,47 +19,7 @@ function SubMenuContent1() {
           {items.map((item, index) => {
             return (
               <>
-                <Box // List Title
-                  margin="0 0 20px"
-                  fontSize="14px"
-                  fontWeight="700"
-                  lineHeight="1"
-                  marginTop={index === 1 ? "40px" : "0"}
-                >
-                  <NextLink href="/">
-                    <Text
-                      as="a"
-                      href={item.href}
-                      position="relative"
-                      fontWeight="700"
-                      lineHeight="1"
-                      paddingRight="28px"
-                      textDecoration="none"
-                      color={hoveredNo1 === index ? "#00c4cc" : "#4c4c4c"}
-                      transition="color .2s"
-                      onMouseEnter={() => setHoveredNo1(index)}
-                      onMouseLeave={() => setHoveredNo1(-1)}
-                      _before={{
-                        content: "''",
-                        position: "absolute",
-                        width: "20px",
-                        height: "20px",
-                        top: "50%",
-                        right: hoveredNo1 === index ? "-12px" : "0px",
-                        transform: "translateY(-50%)",
-                        margin: "1px 0 0",
-                        backgroundImage:
-                          "url(/image/picture/icon_arrowRight_blue.svg)",
-                        backgroundPosition: "50%",
-                        backgroundSize: "contain",
-                        backgroundRepeat: "no-repeat",
-                        transition: "right .2s",
-                      }}
-                    >
-                      {item.title}
-                    </Text>
-                  </NextLink>
-                </Box>
+                
 
                 {item.items ? (
                   <Box marginLeft="16px">

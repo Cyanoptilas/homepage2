@@ -3,7 +3,7 @@ import { HeaderLogo } from "../ui/index";
 import { HeaderNav } from "./HeaderNav";
 
 import { createGlobalState, useWindowScroll } from "react-use";
-import SubMenuContainer from "./SubMenuContainer";
+import SubMenuContainer from "./SubMenu/SubMenuContainer";
 
 export const useHoveredMenuItem = createGlobalState<string>("0");
 

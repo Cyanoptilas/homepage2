@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { useHoveredMenuItem } from "./HeaderContainer";
+import { useHoveredMenuItem } from "../HeaderContainer";
 import { SubMenuContent1 } from "./SubMenuContent1";
 import { SubMenuContent2 } from "./SubMenuContent2";
 import { SubMenuContent3 } from "./SubMenuContent3";
@@ -18,11 +18,8 @@ function SubMenuGroup({ SubMenuIndex }: { SubMenuIndex: string }) {
       left="50%"
       transform="translate(-50%,-50%)"
       opacity={value === SubMenuIndex ? "1" : "0"}
-      //   opacity="1"
       transition="opacity 0.6s ease"
       transitionDelay=".3s"
-      //   pointerEvents={value === SubMenuIndex ? "none" : "none"}
-      //   pointerEvents="none"
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -37,4 +34,4 @@ function SubMenuGroup({ SubMenuIndex }: { SubMenuIndex: string }) {
   );
 }
 
-export default SubMenuGroup;
+export { SubMenuGroup };

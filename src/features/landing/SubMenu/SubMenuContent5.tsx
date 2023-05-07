@@ -1,6 +1,6 @@
 import { Box, Flex, Link, List, ListItem } from "@chakra-ui/react";
-import { siteConfig } from "../configs/site";
-import { useHoveredMenuItem } from "./HeaderContainer";
+import { siteConfig } from "@/features/configs/site";
+import { useHoveredMenuItem } from "../HeaderContainer";
 
 function SubMenuContent5() {
   const [value, setValue] = useHoveredMenuItem();
