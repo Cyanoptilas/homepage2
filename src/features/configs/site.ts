@@ -4,7 +4,7 @@ interface siteConfig {
   mainNav: IMenuItem[];
 }
 
-interface IMenuItem {
+export interface IMenuItem {
   id?: string;
   title: string;
   href: string;
@@ -24,11 +24,26 @@ export const siteConfig: siteConfig = {
           title: "SmartHRの特徴",
           href: "https://smarthr.jp/smarthr/",
           items: [
-            { title: "SmartHRで始める\n人材マネジメント", href: "https://smarthr.jp/hr-management/" },
-            { title: "SmartHRで\n業務はどう変わる？", href: "https://smarthr.jp/hr-management/" },
-            { title: "充実のサポート", href: "https://smarthr.jp/support-contents/" },
-            { title: "安心のセキュリティ", href: "https://smarthr.jp/security/" },
-            { title: "豊富な外部連携サービス", href: "https://smarthr.jp/function/cooperation/" },
+            {
+              title: "SmartHRで始める\n人材マネジメント",
+              href: "https://smarthr.jp/hr-management/",
+            },
+            {
+              title: "SmartHRで\n業務はどう変わる？",
+              href: "https://smarthr.jp/hr-management/",
+            },
+            {
+              title: "充実のサポート",
+              href: "https://smarthr.jp/support-contents/",
+            },
+            {
+              title: "安心のセキュリティ",
+              href: "https://smarthr.jp/security/",
+            },
+            {
+              title: "豊富な外部連携サービス",
+              href: "https://smarthr.jp/function/cooperation/",
+            },
           ],
         },
         { title: "SmartHRの想い", href: "https://smarthr.jp/servicevision/" },

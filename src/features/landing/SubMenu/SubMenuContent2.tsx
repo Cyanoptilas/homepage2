@@ -3,56 +3,26 @@ import { Box, Flex, Link, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { siteConfig } from "../../configs/site";
 import { useHoveredMenuItem } from "../HeaderContainer";
+import { SubMenuListTitle } from "./SubMenuListTitle";
+import { SubMenuGrid } from "./SabMenuGrid";
 
 function SubMenuContent2() {
   const [value, setValue] = useHoveredMenuItem();
   const subMenuIndex = "2";
-  const [hoveredNo1, setHoveredNo1] = useState(-1);
+  const [hoveredNo, setHoveredNo] = useState(-1);
 
   const items = siteConfig.mainNav[parseInt(subMenuIndex) - 1].items!;
 
   if (value === subMenuIndex) {
-    const index = 1;
+    const index = 0;
     return (
       <Flex outline="0" textDecoration="none">
-        <Flex // List Title
-          fontSize="20px"
-          flexShrink="0"
-          display="flex"
-          flexDirection="column"
-          marginRight="72px"
-        >
-          <NextLink href="https://smarthr.jp/function/">
-            <Text
-              as="a"
-              position="relative"
-              fontWeight="700"
-              lineHeight="1"
-              textDecoration="none"
-              color={hoveredNo1 === 1 ? "#00c4cc" : "#4c4c4c"}
-              transition="color .2s"
-              onMouseEnter={() => setHoveredNo1(index)}
-              onMouseLeave={() => setHoveredNo1(-1)}
-              _before={{
-                content: "''",
-                position: "absolute",
-                width: "20px",
-                height: "20px",
-                top: "50%",
-                right: hoveredNo1 === index ? "-12px" : "0px",
-                transform: "translateY(-50%)",
-                margin: "1px 0 0",
-                backgroundImage: "url(/image/picture/icon_arrowRight_blue.svg)",
-                backgroundPosition: "50%",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                transition: "right .2s",
-              }}
-            >
-              機能一覧
-            </Text>
-          </NextLink>
-        </Flex>
+        <SubMenuListTitle
+          hoveredNo={hoveredNo}
+          index={index}
+          setHoveredNo={setHoveredNo}
+        />
+
         <Box>
           {items.map((item, index1) => {
             return (
@@ -77,7 +47,8 @@ function SubMenuContent2() {
                   </Text>
                 </Box>
 
-                {item.items ? (
+                <SubMenuGrid item1={item} index1={index1} />
+                {/* {item.items ? (
                   <Box marginLeft="16px">
                     <List
                       display="grid"
@@ -156,7 +127,7 @@ function SubMenuContent2() {
                   </Box>
                 ) : (
                   <></>
-                )}
+                )} */}
               </>
             );
           })}
