@@ -3,19 +3,24 @@ import { Box, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
 
-type Props = {
+type Props1 = {
   item1?: IMenuItem;
   index1?: number;
+  id?: string;
 };
 
-function SubMenuGrid({ item1, index1 }: Props) {
+function SubMenuGrid({ item1, index1, id }: Props1) {
   return (
     <>
       {item1 && item1.items ? (
         <Box marginLeft="16px">
           <List
             display="grid"
-            gridTemplateColumns="184px 184px 184px 184px"
+            gridTemplateColumns={
+              id && parseInt(id) >= 3 && parseInt(id) <= 4
+                ? "184px 184px"
+                : "184px 184px 184px 184px"
+            }
             gap={index1 ? "14px 48px" : "12px 48px"}
           >
             {item1.items.map((item2, index2) => {

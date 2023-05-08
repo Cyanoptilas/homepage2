@@ -79,14 +79,19 @@ export const siteConfig: siteConfig = {
             { title: "配置シミュレーション", href: "" },
             { title: "従業員サーベイ", href: "" },
             { title: "ラクラク分析サポート", href: "" },
-            { title: "カスタム社員名簿", href: "" },
-            { title: "組織図", href: "" },
+            {
+              title: "カスタム社員名簿",
+              href: "https://smarthr.jp/function/meibo/",
+            },
+            { title: "組織図", href: "https://smarthr.jp/function/meibo/" },
           ],
         },
         {
           title: "アプリでもっと便利に",
           href: "",
-          items: [{ title: "SmartHR Plus β版", href: "" }],
+          items: [
+            { title: "SmartHR Plus β版", href: "https://soroban.smarthr.jp/" },
+          ],
         },
       ],
     },
@@ -97,11 +102,11 @@ export const siteConfig: siteConfig = {
       items: [
         {
           title: "料金プラン",
-          href: "",
+          href: "https://smarthr.jp/pricing/",
         },
         {
           title: "コスト削減シミュレーター",
-          href: "",
+          href: "https://soroban.smarthr.jp/",
         },
       ],
     },
