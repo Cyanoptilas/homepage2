@@ -7,7 +7,7 @@ export default function SubMenuContainer() {
   const [value, setValue] = useHoveredMenuItem();
 
   return (
-    <Box // megaMenu__inner
+    <Box
       height={
         value === "0"
           ? "0"
@@ -20,9 +20,9 @@ export default function SubMenuContainer() {
           : "102px"
       }
       width="100vw"
-      borderTop="2px solid #f4f8f9"
+      borderTop={value != "0" ? "2px solid #f4f8f9" : "none"}
       position="fixed"
-      top={value != "0" ? "72px" : "0"}
+      top="72px"
       backgroundColor="#fff"
       overflow="hidden"
       boxShadow="0 0 6px rgba(0,0,0,.24)"
