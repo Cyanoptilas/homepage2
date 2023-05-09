@@ -20,7 +20,7 @@ export default function HeaderContainer() {
         left="0"
         width="100vw"
         zIndex="1000"
-        backgroundColor={y > 80 || value != "0" ? "white" : "#00c4cc"}
+        backgroundColor={y > 80 || value != "0" ? "white" : "transparent"}
         transition="background-color 0.3s ease-in-out"
         boxShadow={y > 80 ? "0 0 6px rgba(0,0,0,.24)" : "0"}
       >
