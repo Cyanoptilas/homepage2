@@ -19,7 +19,7 @@ export default function BarNo1() {
                 display: "inline-block",
                 height: "28px",
                 width: "0",
-                marginLeft:"5px",
+                marginLeft: "5px",
                 borderRight: "2px",
                 borderStyle: "solid",
                 borderColor: "#d2d2d2",
