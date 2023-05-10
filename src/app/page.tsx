@@ -27,14 +27,13 @@ export default function Home() {
   return (
     <ChakraProvider theme={customTheme}>
       <FloatingButtonTrial />
-      <BarLogoScroll />
 
       <HeaderContainer />
       <Box onMouseEnter={() => setValue("0")}>
         <Top />
         <Box height="25px" />
         <BarNo1 />
-        <Box height="30px" />
+        <Box height="10px" />
         <BarLogoScroll />
         <Annotation />
         <VStack align={"center"} background={"blackAlpha.100"}>
