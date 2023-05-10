@@ -31,9 +31,9 @@ export default function Home() {
       <HeaderContainer />
       <Box onMouseEnter={() => setValue("0")}>
         <Top />
-        <Box height={5} />
+        <Box height="25px" />
         <BarNo1 />
-        <Box height={5} />
+        <Box height="30px" />
         <BarLogoScroll />
         <Annotation />
         <VStack align={"center"} background={"blackAlpha.100"}>
