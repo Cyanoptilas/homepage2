@@ -27,6 +27,7 @@ export default function Home() {
   return (
     <ChakraProvider theme={customTheme}>
       <FloatingButtonTrial />
+      <BarLogoScroll />
 
       <HeaderContainer />
       <Box onMouseEnter={() => setValue("0")}>

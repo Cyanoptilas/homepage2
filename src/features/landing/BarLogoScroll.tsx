@@ -1,43 +1,33 @@
+"use client";
 import React from "react";
 import { Box, Image, keyframes } from "@chakra-ui/react";
 
 const scrollAnimation = keyframes`
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+0% {
+  background-position: 0 0;
+}
+100% {
+  background-position: -4138px 0;
+}
 `;
 
 function BarLogoScroll() {
   return (
-    <Box width="100%" height="200px" overflow="hidden" position="relative">
+    <Box
+      height="127px"
+      marginTop="30px"
+      textAlign="center"
+      boxSizing="border-box"
+    >
       <Box
-        width="600%"
-        display="flex"
-        animation={`${scrollAnimation} 40s linear infinite`}
-      >
-        <LogoImage />
-        <LogoImage />
-      </Box>
+        animation={`${scrollAnimation} 46s linear infinite`}
+        background="url(/image/logo/logo-slide.png) repeat-x 50%"
+        backgroundSize="auto 100px"
+        height="125px"
+        width="100%"
+      ></Box>
     </Box>
   );
 }
 
-function LogoImage() {
-  return (
-    <Image
-      src="/image/logo/logo-slide.png"
-      alt="ロゴスライド"
-      width="50%"
-      height="100%"
-      objectFit="cover"
-    />
-  );
-}
-
 export { BarLogoScroll };
-
-// src="/image/logo/logo-slide.png"
-// alt="ロゴスライド"
