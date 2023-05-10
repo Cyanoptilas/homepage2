@@ -1,8 +1,11 @@
 import { Box, Flex, Text, Image, VStack } from "@chakra-ui/react";
 import { ButtonWhite } from "../ui/ButtonWhite";
 import { ButtonUseful3Docs } from "./ButtonUseful3Docs";
+import { useHoveredMenuItem } from "./HeaderContainer";
 
 function Top() {
+  const [value, setValue] = useHoveredMenuItem();
+
   return (
     <>
       <Flex
@@ -10,12 +13,13 @@ function Top() {
         background="linear-gradient(150deg,#00c4cc 50%,#00c4cc 0,#00aeb8)"
         overflow="hidden"
         justifyContent="center"
+        onMouseEnter={() => setValue("0")}
       >
         <Flex width="1420px" color="red" position="relative" zIndex="1">
           <VStack
             textAlign="center"
             justifyContent="center"
-            marginLeft="130px"
+            marginLeft="140px"
             paddingTop="70px"
             paddingRight="50px"
           >
@@ -62,14 +66,13 @@ function Top() {
             height="560px"
             overflow="hidden"
             right="75px"
-            // margin="0 0 0 100px"
-          >
+            width="65%"
+            >
             <Image
               src="/image/picture/img_home01.png"
               alt="img_top"
               fit="cover"
               align="left"
-              width="100%"
               maxWidth="781px"
               position="absolute"
               bottom="0"

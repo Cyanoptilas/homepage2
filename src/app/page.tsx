@@ -29,8 +29,8 @@ export default function Home() {
       <FloatingButtonTrial />
 
       <HeaderContainer />
-      <Top />
       <Box onMouseEnter={() => setValue("0")}>
+        <Top />
         <Box height={5} />
         <BarNo1 />
         <Box height={5} />
