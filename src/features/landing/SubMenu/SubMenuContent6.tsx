@@ -1,4 +1,12 @@
-import { Box, Flex, HStack, Link, List, ListItem } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  HStack,
+  Image,
+  Link,
+  List,
+  ListItem,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useHoveredMenuItem } from "../HeaderContainer";
 
@@ -20,18 +28,30 @@ function SubMenuContent6() {
               gridTemplateRows={"100px 100px 100px 100px"}
               gridGap="3px"
             >
-              <NextLink href="/about"></NextLink>
-              <Flex width="100px" height="100px" background="pink"></Flex>
-              <Flex width="100px" height="100px" background="orange"></Flex>
-              <Flex width="100px" height="100px" background="turquoise"></Flex>
-              <Flex width="100px" height="100px" background="yellow"></Flex>
-              <Flex width="100px" height="100px" background="purple"></Flex>
-              <Flex width="100px" height="100px" background="pink"></Flex>
+              <Flex height="70px" width="150px" background="orange">
+                <Image
+                  src="/image/picture/img_useful_documents.png"
+                  alt="img_top"
+                  height="70px"
+                  width="150px"
+                  fit="cover"
+                  align="top"
+                  position="absolute"
+                />
+              </Flex>
             </Flex>
           </Link>
           <Link>
             <Flex as="a" width="340px" height="280px" background="skyblue">
               <NextLink href="/about"></NextLink>
+              <Flex height="20px" width="20px" background="transparent">
+                <Image
+                  src="/image/picture/icon_download.svg"
+                  alt="img_top"
+                  height="20px"
+                  width="20px"
+                />
+              </Flex>
             </Flex>
           </Link>
           <Link>

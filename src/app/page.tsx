@@ -29,23 +29,21 @@ export default function Home() {
       <FloatingButtonTrial />
 
       <HeaderContainer />
-      <VStack align={"center"} background={"white"}>
-        <Box onMouseEnter={() => setValue("0")}>
-          <Top />
-          <Box height={5} />
-          <BarNo1 />
-          <Box height={5} />
-          <BarLogoScroll />
-          <Annotation />
-        </Box>
-      </VStack>
-      <VStack align={"center"} background={"blackAlpha.100"}>
-        <Box height={20} />
-        <BarServiceOutline />
-        <Box height={10} />
-        <Availability />
-        <Box height={10} />
-      </VStack>
+      <Top />
+      <Box onMouseEnter={() => setValue("0")}>
+        <Box height={5} />
+        <BarNo1 />
+        <Box height={5} />
+        <BarLogoScroll />
+        <Annotation />
+        <VStack align={"center"} background={"blackAlpha.100"}>
+          <Box height={20} />
+          <BarServiceOutline />
+          <Box height={10} />
+          <Availability />
+          <Box height={10} />
+        </VStack>
+      </Box>
     </ChakraProvider>
   );
 }

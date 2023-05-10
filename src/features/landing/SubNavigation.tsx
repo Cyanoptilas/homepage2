@@ -50,17 +50,12 @@ function SubNavigation() {
               />
             )}
           </Box>
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display="flex" ml={10}>
             <MenuItems />
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
+        <Stack justify={"flex-end"} direction={"row"} spacing={6}>
           <Button
             as={"a"}
             width={"70px"}

@@ -1,5 +1,4 @@
 import { Button, SystemStyleObject, Text, VStack } from "@chakra-ui/react";
-import { text } from "stream/consumers";
 
 type Props = {
   buttonColor: string;
@@ -21,7 +20,7 @@ function Button1({
   return (
     <Button
       as={"a"}
-      width={"280px"}
+      width={"390px"}
       height={"50px"}
       paddingLeft={"10"}
       paddingRight={"10"}
@@ -30,14 +29,12 @@ function Button1({
       color={textColor}
       bg={buttonColor}
       rounded={100}
-      // overflowWrap="break-word"
       href={url}
       _hover={hover}
     >
       <VStack>
         {textSub ? (
-          <Text fontSize={"13px"}
-          marginBottom="-6px">
+          <Text fontSize={"13px"} marginBottom="-6px">
             {textSub}
           </Text>
         ) : null}

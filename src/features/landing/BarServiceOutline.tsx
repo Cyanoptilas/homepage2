@@ -12,7 +12,7 @@ import {
 function BarServiceOutline() {
   return (
     <>
-      <Flex paddingTop="20px" maxWidth="100%" margin="0 auto 80px">
+      <Flex maxWidth="1366px" margin="0 auto 80px">
         <Flex
           position="relative"
           width="1280px"
@@ -59,7 +59,7 @@ function BarServiceOutline() {
                 </Text>
               </Flex>
             </VStack>
-            <Flex
+            {/* <Flex
               position="absolute"
               top="52px"
               right="-244px"
@@ -74,7 +74,7 @@ function BarServiceOutline() {
                 height="100%"
                 objectFit="contain"
               />
-            </Flex>
+            </Flex> */}
           </HStack>
         </Flex>
       </Flex>

@@ -20,13 +20,13 @@ export default function SubMenuContainer() {
           : "102px"
       }
       width="100vw"
-      borderTop={value != "0" ? "2px solid #f4f8f9" : "none"}
+      borderTop={value != "0" ? "2px solid #f4f8f9" : "transparent"}
       position="fixed"
       top="72px"
       backgroundColor="#fff"
       overflow="hidden"
       boxShadow="0 0 6px rgba(0,0,0,.24)"
-      zIndex="999"
+      zIndex="9"
       transition="all 0.3s ease-in-out"
     >
       <SubMenuContainerInner />
