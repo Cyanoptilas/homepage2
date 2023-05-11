@@ -34,6 +34,7 @@ function ButtonOrange({ label, href, isBlank = false }: Props) {
       _hover={{
         boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
         transform: "translateY(-1px)",
+        backgroundColor: "#f6b12f",
       }}
     >
       {label}
