@@ -20,14 +20,13 @@ function Top() {
             textAlign="center"
             justifyContent="center"
             marginLeft="140px"
-            paddingTop="70px"
             paddingRight="50px"
           >
             <Flex>
               <Image
                 src="/image/character/syain-ni-ii.svg"
                 alt="syain-ni-ii"
-                minW="300"
+                width="274px"
                 objectFit="contain"
                 marginTop="25"
               />
@@ -49,7 +48,7 @@ function Top() {
               <br />
               タレントマネジメントまで！
             </Text>
-            <Box height="3px" />
+            <Box height="8px" />
             <ButtonUseful3Docs />
             <Box height="3px" />
             <ButtonWhite
@@ -62,12 +61,7 @@ function Top() {
             />
           </VStack>
 
-          <Flex
-            height="560px"
-            overflow="hidden"
-            right="75px"
-            width="65%"
-            >
+          <Flex height="560px" overflow="hidden" right="75px" width="65%">
             <Image
               src="/image/picture/img_home01.png"
               alt="img_top"

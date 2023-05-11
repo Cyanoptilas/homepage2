@@ -12,7 +12,7 @@ function ButtonWhite({ textMain, textSub, url, hover }: Props) {
     <Button
       as="a"
       width="390px"
-      height="50px"
+      height="55px"
       paddingLeft="10"
       paddingRight="10"
       fontSize="16px"

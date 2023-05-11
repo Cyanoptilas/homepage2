@@ -16,7 +16,6 @@ function ButtonUseful3Docs() {
       _hover={{
         top: "-1px",
         boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
-        //   color: inherit;
         transform: "translateY(-1px)",
         filter: "brightness(1.1)",
       }}
