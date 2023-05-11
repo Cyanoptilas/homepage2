@@ -37,7 +37,6 @@ export default function Home() {
         <Box height="10px" />
         <BarLogoScroll />
         <Annotation />
-        <Box height={20} />
         <BarServiceOutline />
         <ButtonArea />
 
