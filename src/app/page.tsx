@@ -18,6 +18,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 import customTheme from "@/features/configs/CustomTheme";
+import { ButtonArea } from "@/features/landing/ButtonArea";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
 config.autoAddCss = false;
 
@@ -37,10 +38,10 @@ export default function Home() {
         <BarLogoScroll />
         <Annotation />
         <Box height={20} />
-
         <BarServiceOutline />
+        <ButtonArea />
 
-        <VStack align={"center"} background={"blackAlpha.100"}>
+        <VStack align={"center"} background="#f4f8f9">
           <Box height={10} />
           <Availability />
           <Box height={10} />

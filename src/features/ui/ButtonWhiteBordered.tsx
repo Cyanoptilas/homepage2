@@ -3,10 +3,20 @@ import { Button } from "@chakra-ui/react";
 interface Props {
   label: string;
   href: string;
+  width?: string;
+  height?: string;
+  fontSize?: string;
   isBlank?: boolean;
 }
 
-function ButtonWhiteBordered({ label, href, isBlank = false }: Props) {
+function ButtonWhiteBordered({
+  label,
+  href,
+  width,
+  height,
+  fontSize,
+  isBlank = false,
+}: Props) {
   const IconBlank = {
     content: '""',
     position: "absolute",
@@ -28,9 +38,9 @@ function ButtonWhiteBordered({ label, href, isBlank = false }: Props) {
       target={isBlank ? "_blank" : "_self"}
       rel={isBlank ? "noopener noreferrer" : ""}
       position="relative"
-      width="73%"
-      maxWidth="280px"
-      height="48px"
+      width={width ? width : "73%"}
+      maxWidth={width ? "100%" : "280px"}
+      height={height ? height : "48px"}
       borderRadius="48px"
       display="flex"
       alignItems="center"
@@ -38,7 +48,7 @@ function ButtonWhiteBordered({ label, href, isBlank = false }: Props) {
       border="2px solid #e5e5e5"
       backgroundColor="#fff"
       fontWeight="700"
-      fontSize="14px"
+      fontSize={fontSize ? fontSize : "14px"}
       lineHeight="1.5"
       color="#444"
       padding="0 40px"

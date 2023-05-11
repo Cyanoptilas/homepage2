@@ -3,10 +3,20 @@ import { Button } from "@chakra-ui/react";
 interface Props {
   label: string;
   href: string;
+  width?: string;
+  height?: string;
+  fontSize?: string;
   isBlank?: boolean;
 }
 
-function ButtonOrange({ label, href, isBlank = false }: Props) {
+function ButtonOrange({
+  label,
+  href,
+  width,
+  height,
+  fontSize,
+  isBlank = false,
+}: Props) {
   return (
     <Button
       as="a"
@@ -14,9 +24,9 @@ function ButtonOrange({ label, href, isBlank = false }: Props) {
       target={isBlank ? "_blank" : "_self"}
       rel={isBlank ? "noopener noreferrer" : ""}
       position="relative"
-      width="73%"
-      maxWidth="280px"
-      height="48px"
+      width={width ? width : "73%"}
+      maxWidth={width ? "100%" : "280px"}
+      height={height ? height : "48px"}
       borderRadius="48px"
       display="flex"
       alignItems="center"
@@ -24,7 +34,7 @@ function ButtonOrange({ label, href, isBlank = false }: Props) {
       border="2px solid transparent"
       backgroundColor="#fd9a00"
       fontWeight="700"
-      fontSize="14px"
+      fontSize={fontSize ? fontSize : "14px"}
       lineHeight="1.5"
       color="white"
       padding="0 40px"
