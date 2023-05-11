@@ -5,12 +5,11 @@ type Props = {
 };
 
 function HeaderLogo({ color }: Props) {
-
   return (
-    <Box marginRight="32px">
+    <Box marginRight="32px"  width="168px"
+    height="32px">
       <svg
-        width="172px"
-        height="31px"
+       
         viewBox="0 0 172 31"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
