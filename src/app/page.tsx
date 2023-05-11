@@ -36,9 +36,11 @@ export default function Home() {
         <Box height="10px" />
         <BarLogoScroll />
         <Annotation />
+        <Box height={20} />
+
+        <BarServiceOutline />
+
         <VStack align={"center"} background={"blackAlpha.100"}>
-          <Box height={20} />
-          <BarServiceOutline />
           <Box height={10} />
           <Availability />
           <Box height={10} />

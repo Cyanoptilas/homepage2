@@ -6,7 +6,7 @@ const customTheme = extendTheme({
       body: {
         fontFamily:
           // "'游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif",
-          "'Meiryo', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif",
+          "'YakuHanJP', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif",
         lineHeight: "1",
         fontWeight: "300",
       },
