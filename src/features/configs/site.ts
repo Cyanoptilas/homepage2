@@ -58,27 +58,66 @@ export const siteConfig: siteConfig = {
           title: "人事・労務管理",
           href: "",
           items: [
-            { title: "入社手続き・雇用契約", href: "" },
-            { title: "文書配布", href: "" },
-            { title: "年末調整", href: "" },
-            { title: "マイナンバー管理", href: "" },
-            { title: "申請承認機能", href: "" },
-            { title: "お知らせ掲示板", href: "" },
-            { title: "予約管理", href: "" },
-            { title: "Web給与明細", href: "" },
-            { title: "CSVカスタムダウンロード", href: "" },
-            { title: "多言語化対応機能", href: "" },
+            {
+              title: "入社手続き・雇用契約",
+              href: "https://smarthr.jp/function/agreement/",
+            },
+            {
+              title: "文書配布",
+              href: "https://smarthr.jp/function/distribution/",
+            },
+            { title: "年末調整", href: "https://smarthr.jp/function/nc/" },
+            {
+              title: "マイナンバー管理",
+              href: "https://smarthr.jp/function/my-number/",
+            },
+            {
+              title: "申請承認機能",
+              href: "https://smarthr.jp/function/application-approval/",
+            },
+            {
+              title: "お知らせ掲示板",
+              href: "https://smarthr.jp/function/notice/",
+            },
+            { title: "予約管理", href: "https://smarthr.jp/function/reserve/" },
+            {
+              title: "Web給与明細",
+              href: "https://smarthr.jp/function/salary/",
+            },
+            {
+              title: "CSVカスタムダウンロード",
+              href: "https://smarthr.jp/function/csv/",
+            },
+            {
+              title: "多言語化対応機能",
+              href: "https://smarthr.jp/function/#languageFunctionCard",
+            },
           ],
         },
         {
           title: "タレントマネジメント",
           href: "",
           items: [
-            { title: "従業員データベース", href: "" },
-            { title: "人事評価", href: "" },
-            { title: "配置シミュレーション", href: "" },
-            { title: "従業員サーベイ", href: "" },
-            { title: "ラクラク分析サポート", href: "" },
+            {
+              title: "従業員データベース",
+              href: "https://smarthr.jp/function/database/",
+            },
+            {
+              title: "人事評価",
+              href: "https://smarthr.jp/function/evaluation/",
+            },
+            {
+              title: "配置シミュレーション",
+              href: "https://smarthr.jp/function/simulation/",
+            },
+            {
+              title: "従業員サーベイ",
+              href: "https://smarthr.jp/function/survey/",
+            },
+            {
+              title: "ラクラク分析サポート",
+              href: "https://smarthr.jp/function/report/",
+            },
             {
               title: "カスタム社員名簿",
               href: "https://smarthr.jp/function/meibo/",
@@ -117,11 +156,11 @@ export const siteConfig: siteConfig = {
       items: [
         {
           title: "導入事例",
-          href: "",
+          href: "https://smarthr.jp/case/",
         },
         {
           title: "導入企業一覧",
-          href: "",
+          href: "https://smarthr.jp/case/list.html",
         },
       ],
     },
@@ -132,27 +171,21 @@ export const siteConfig: siteConfig = {
       items: [
         {
           title: "ニュース",
-          href: "",
+          href: "https://smarthr.jp/news/",
         },
         {
           title: "プレスリリース",
-          href: "",
+          href: "https://smarthr.jp/release/",
         },
         {
           title: "アップデート情報",
-          href: "",
+          href: "https://smarthr.jp/update/",
         },
         {
           title: "メンテナンス・障害情報",
-          href: "",
+          href: "https://smarthr.jp/support/",
         },
       ],
     },
   ],
 };
-
-// This ensures that the icon CSS is loaded immediately before attempting to render icons
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-// Prevent fontawesome from dynamically adding its css since we did it manually above
-config.autoAddCss = false;
