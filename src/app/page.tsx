@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, ChakraProvider, Flex, VStack } from "@chakra-ui/react";
+import { Box, ChakraProvider, VStack } from "@chakra-ui/react";
 
 import {
   Annotation,
@@ -8,6 +8,7 @@ import {
   BarLogoScroll,
   BarNo1,
   BarServiceOutline,
+  CapabilitiesArea,
   FloatingButtonTrial,
   HeaderContainer,
   Top,
@@ -39,6 +40,7 @@ export default function Home() {
         <Annotation />
         <BarServiceOutline />
         <ButtonArea />
+        <CapabilitiesArea />
 
         <VStack align={"center"} background="#f4f8f9">
           <Box height={10} />
