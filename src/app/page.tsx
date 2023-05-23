@@ -41,12 +41,6 @@ export default function Home() {
         <BarServiceOutline />
         <ButtonArea />
         <CapabilitiesArea />
-
-        <VStack align={"center"} background="#f4f8f9">
-          <Box height={10} />
-          <Availability />
-          <Box height={10} />
-        </VStack>
       </Box>
     </ChakraProvider>
   );

@@ -2,7 +2,7 @@ import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
 
 function Availability() {
   return (
-    <Box>
+    <Box background="#f4f8f9" height="650px">
       <VStack>
         <Text as="b" fontSize={34} paddingY={10}>
           SmartHRができること
