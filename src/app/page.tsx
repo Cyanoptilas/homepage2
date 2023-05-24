@@ -29,9 +29,7 @@ export default function Home() {
       <HeaderContainer />
       <Box onMouseEnter={() => setValue("0")}>
         <Top />
-        <Box height="25px" />
         <BarNo1 />
-        <Box height="10px" />
         <BarLogoScroll />
         <Annotation />
         <BarServiceOutline />

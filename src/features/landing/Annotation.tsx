@@ -11,7 +11,7 @@ function Annotation() {
         color="#545454"
         letterSpacing="0"
         lineHeight="18px"
-        marginBottom="20px"
+        marginBottom="26px"
       >
         <Box
           box-sizing="border-box"

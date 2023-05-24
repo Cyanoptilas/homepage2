@@ -9,6 +9,7 @@ function Top() {
     <>
       <Flex
         height="630px"
+        margin="0 0 30px"
         background="linear-gradient(150deg,#00c4cc 50%,#00c4cc 0,#00aeb8)"
         overflow="hidden"
         justifyContent="center"
