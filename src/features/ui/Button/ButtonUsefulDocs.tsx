@@ -2,7 +2,7 @@ import { Box, Button } from "@chakra-ui/react";
 
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useHoveredMenuItem } from "../landing/HeaderContainer";
+import { useHoveredMenuItem } from "../../landing/HeaderContainer";
 
 function ButtonUsefulDocs() {
   const [value, setValue] = useHoveredMenuItem();

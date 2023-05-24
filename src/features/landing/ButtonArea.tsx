@@ -1,6 +1,5 @@
 import { Box, List, ListItem } from "@chakra-ui/react";
-import { ButtonWhiteBordered } from "../ui";
-import { ButtonOrange } from "../ui/ButtonOrange";
+import { ButtonOrange, ButtonWhiteBordered } from "../ui";
 
 function ButtonArea() {
   return (

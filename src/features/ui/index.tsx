@@ -1,6 +1,8 @@
-export { HeaderLogo } from "./HeaderLogo";
-export { ButtonEvent } from "./ButtonEvent";
-export { ButtonLogin } from "./ButtonLogin";
-export { ButtonContact } from "./ButtonContact";
-export { ButtonUsefulDocs } from "./ButtonUsefulDocs";
-export { ButtonWhiteBordered } from "./ButtonWhiteBordered";
+export { ButtonContact } from "./Button/ButtonContact";
+export { ButtonEvent } from "./Button/ButtonEvent";
+export { ButtonLogin } from "./Button/ButtonLogin";
+export { ButtonOrange } from "./Button/ButtonOrange";
+export { ButtonUsefulDocs } from "./Button/ButtonUsefulDocs";
+export { ButtonWhite } from "./Button/ButtonWhite";
+export { ButtonWhiteBordered } from "./Button/ButtonWhiteBordered";
+export { HeaderLogo } from "./Header/HeaderLogo";

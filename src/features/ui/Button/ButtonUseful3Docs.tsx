@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Image, VStack } from "@chakra-ui/react";
+import { Button, Flex, HStack, Image, VStack } from "@chakra-ui/react";
 
 function ButtonUseful3Docs() {
   const textSub = "SmartHRがすぐわかる！";

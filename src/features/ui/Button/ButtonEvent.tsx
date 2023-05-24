@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { useWindowScroll } from "react-use";
-import { useHoveredMenuItem } from "../landing/HeaderContainer";
+import { useHoveredMenuItem } from "../../landing/HeaderContainer";
 
 function ButtonEvent() {
   const { x, y } = useWindowScroll();
