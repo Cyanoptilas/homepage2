@@ -4,7 +4,7 @@ import { Box } from "@chakra-ui/react";
 
 import {
   Annotation,
-  BarLogoScroll,
+  CompaniesLogoSlide,
   BarNo1,
   BarServiceOutline,
   CapabilitiesArea,
@@ -15,28 +15,23 @@ import {
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
-import { ChakraProvider } from "@chakra-ui/react";
-import customTheme from "@/features/configs/CustomTheme";
-
 export default function Home() {
   const [value, setValue] = useHoveredMenuItem();
 
   return (
     <>
-      {/* <ChakraProvider theme={customTheme}> */}
       <FloatingButtonTrial />
 
       <HeaderContainer />
       <Box onMouseEnter={() => setValue("0")}>
         <Top />
         <BarNo1 />
-        <BarLogoScroll />
+        <CompaniesLogoSlide />
         <Annotation />
         <BarServiceOutline />
         <ButtonArea />
         <CapabilitiesArea />
       </Box>
-      {/* </ChakraProvider> */}
     </>
   );
 }

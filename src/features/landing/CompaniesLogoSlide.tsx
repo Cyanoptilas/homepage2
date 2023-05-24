@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Image, keyframes } from "@chakra-ui/react";
+import { Box, keyframes } from "@chakra-ui/react";
 
 const scrollAnimation = keyframes`
 0% {
@@ -11,7 +11,7 @@ const scrollAnimation = keyframes`
 }
 `;
 
-function BarLogoScroll() {
+function CompaniesLogoSlide() {
   return (
     <Box
       height="127px"
@@ -30,4 +30,4 @@ function BarLogoScroll() {
   );
 }
 
-export { BarLogoScroll };
+export { CompaniesLogoSlide };
