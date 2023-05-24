@@ -1,10 +1,9 @@
 "use client";
 
-import { Box, ChakraProvider, VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import {
   Annotation,
-  Availability,
   BarLogoScroll,
   BarNo1,
   BarServiceOutline,
@@ -12,22 +11,24 @@ import {
   FloatingButtonTrial,
   HeaderContainer,
   Top,
+  ButtonArea,
 } from "../features/index";
+import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
 // This ensures that the icon CSS is loaded immediately before attempting to render icons
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
-import customTheme from "@/features/configs/CustomTheme";
-import { ButtonArea } from "@/features/landing/ButtonArea";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
 config.autoAddCss = false;
+import { ChakraProvider } from "@chakra-ui/react";
+import customTheme from "@/features/configs/CustomTheme";
 
 export default function Home() {
   const [value, setValue] = useHoveredMenuItem();
 
   return (
-    <ChakraProvider theme={customTheme}>
+    <>
+      {/* <ChakraProvider theme={customTheme}> */}
       <FloatingButtonTrial />
 
       <HeaderContainer />
@@ -42,6 +43,7 @@ export default function Home() {
         <ButtonArea />
         <CapabilitiesArea />
       </Box>
-    </ChakraProvider>
+      {/* </ChakraProvider> */}
+    </>
   );
 }

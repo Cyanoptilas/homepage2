@@ -1,9 +1,10 @@
+export { CapabilitiesArea } from "./CapabilitiesArea/CapabilitiesArea";
 export { Annotation } from "./Annotation";
 export { Availability } from "./Availability";
 export { BarLogoScroll } from "./BarLogoScroll";
 export { BarNo1 } from "./BarNo1";
 export { BarServiceOutline } from "./BarServiceOutline";
-export { CapabilitiesArea } from "./CapabilitiesArea/CapabilitiesArea";
+export { ButtonArea } from "./ButtonArea";
 export { FloatingButtonTrial } from "./FloatingButtonTrial";
 export { SubNavigation } from "./SubNavigation";
 export { HeaderContainer } from "./HeaderContainer";

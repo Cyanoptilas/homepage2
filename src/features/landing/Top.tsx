@@ -1,6 +1,5 @@
 import { Box, Flex, Text, Image, VStack } from "@chakra-ui/react";
-import { ButtonWhite } from "../ui";
-import { ButtonUseful3Docs } from "../ui/Button/ButtonUseful3Docs";
+import { ButtonWhite, ButtonUseful3Docs } from "../ui/index";
 import { useHoveredMenuItem } from "./HeaderContainer";
 
 function Top() {
