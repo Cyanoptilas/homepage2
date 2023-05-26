@@ -1,4 +1,4 @@
-import { Box, Flex, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, List, ListItem, Text } from "@chakra-ui/react";
 
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,12 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { siteConfig } from "@/features/configs/site";
 import { useHoveredMenuItem } from "./HeaderContainer";
 import { useWindowScroll } from "react-use";
-import {
-  ButtonContact,
-  ButtonEvent,
-  ButtonLogin,
-  ButtonUsefulDocs,
-} from "../ui/index";
+import { ButtonTransparent } from "../ui/Button/ButtonTransparent";
 
 export default function HeaderNav() {
   const { x, y } = useWindowScroll();
@@ -55,21 +50,67 @@ export default function HeaderNav() {
                 >
                   {item.title}
                   <Box marginLeft="8px">
-                    <FontAwesomeIcon icon={faAngleDown} size={"xs"} />
+                    <FontAwesomeIcon icon={faAngleDown} size="xs" />
                   </Box>
                 </ListItem>
               </Flex>
             );
           })}
         </List>
-        <ButtonEvent />
+
+        <ButtonTransparent
+          label="イベント"
+          height="38px"
+          href="https://app.smarthr.jp/event"
+        />
       </Flex>
       <Box>
-        <Flex>
-          <ButtonLogin />
+        <Flex alignItems="center">
+          <ButtonTransparent
+            label="ログイン"
+            height="32px"
+            href="https://app.smarthr.jp/login"
+          />
 
-          <ButtonContact />
-          <ButtonUsefulDocs />
+          <Button
+            as="a"
+            width="140px"
+            height="40px"
+            marginRight="16px"
+            fontSize="sm"
+            fontWeight={600}
+            color="black"
+            border="2px solid"
+            borderColor={y > 80 || value != "0" ? "#e5e5e5" : "white"}
+            bg="white"
+            rounded={100}
+            href="https://smarthr.jp/contact"
+            _hover={{
+              boxShadow: "0 5px 8px 0px rgba(0,0,0,.14)",
+            }}
+            onMouseOver={() => setValue("0")}
+          >
+            お問い合わせ
+          </Button>
+
+          <Button
+            as="a"
+            fontSize="sm"
+            fontWeight={600}
+            color="white"
+            bg="orange"
+            rounded={100}
+            href="https://smarthr.jp/resources"
+            _hover={{
+              boxShadow: "0 4px 8px 2px rgba(0,0,0,.14)",
+            }}
+            onMouseOver={() => setValue("6")}
+          >
+            お役立ち資料
+            <Box paddingLeft={2}>
+              <FontAwesomeIcon icon={faAngleDown} size="xs" />
+            </Box>
+          </Button>
         </Flex>
       </Box>
     </Flex>

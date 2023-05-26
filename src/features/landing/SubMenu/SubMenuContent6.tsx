@@ -1,5 +1,5 @@
-import { ButtonOrange, ButtonWhiteBordered } from "@/features/ui";
-import { Box, List, ListItem } from "@chakra-ui/react";
+import { ButtonWhiteBordered } from "@/features/ui";
+import { Box, Button, List, ListItem } from "@chakra-ui/react";
 import { useHoveredMenuItem } from "../HeaderContainer";
 
 function SubMenuContent6() {
@@ -89,10 +89,29 @@ function SubMenuContent6() {
             <ListItemCustom>
               <IconBox imageUrl="url(/image/picture/megaMenu_img_03.png)" />
               <TextBox text="はじめての方でもすぐわかる" />
-              <ButtonOrange
-                label="SmartHR資料 3点セットダウンロード"
+              <Button
+                as="a"
                 href="https://smarthr.jp/resources_service"
-              />
+                target="_blank"
+                rel="noopener noreferrer"
+                height="52px"
+                width="320px"
+                borderRadius="48px"
+                border="2px solid transparent"
+                backgroundColor="#fd9a00"
+                fontSize="16px"
+                lineHeight="1.5"
+                color="white"
+                transition="all .2s ease"
+                outline="0"
+                _hover={{
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                  transform: "translateY(-1px)",
+                  backgroundColor: "#f6b12f",
+                }}
+              >
+                SmartHR資料 3点セットダウンロード
+              </Button>
             </ListItemCustom>
           </List>
         </Box>

@@ -98,14 +98,9 @@ function Section02() {
             </Heading>
           </Box>
           <Box order="1">
-            <HStack>
-                <AggregationListItem label="採用・入社" description="自宅からスマホで入社手続きが完了" />
-                <AggregationListItem label="採用・入社" description="自宅からスマホで入社手続きが完了" />
-                <AggregationListItem label="採用・入社" description="自宅からスマホで入社手続きが完了" />
-                <AggregationListItem label="採用・入社" description="自宅からスマホで入社手続きが完了" />
-            </HStack>
+            <HStack></HStack>
           </Box>
-          <Box order="3">c</Box>
+          <Box order="3"></Box>
         </Box>
       </Box>
     </Box>

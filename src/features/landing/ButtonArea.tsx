@@ -1,5 +1,5 @@
-import { Box, List, ListItem } from "@chakra-ui/react";
-import { ButtonOrange, ButtonWhiteBordered } from "../ui";
+import { Box, Button, List, ListItem } from "@chakra-ui/react";
+import { ButtonWhiteBordered } from "../ui";
 
 function ButtonArea() {
   return (
@@ -11,13 +11,29 @@ function ButtonArea() {
         justifyContent="center"
       >
         <ListItem>
-          <ButtonOrange
-            label="料金・プランの詳細を見る"
-            width="320px"
-            height="52px"
-            fontSize="16px"
+          <Button
+            as="a"
             href="https://smarthr.jp/pricing/"
-          />
+            target="_blank"
+            rel="noopener noreferrer"
+            height="52px"
+            width="320px"
+            borderRadius="48px"
+            border="2px solid transparent"
+            backgroundColor="#fd9a00"
+            fontSize="16px"
+            lineHeight="1.5"
+            color="white"
+            transition="all .2s ease"
+            outline="0"
+            _hover={{
+              boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+              transform: "translateY(-1px)",
+              backgroundColor: "#f6b12f",
+            }}
+          >
+            料金・プランの詳細を見る
+          </Button>
         </ListItem>
         <ListItem>
           <ButtonWhiteBordered

@@ -1,5 +1,5 @@
-import { Box, Flex, Text, Image, VStack } from "@chakra-ui/react";
-import { ButtonWhite, ButtonUseful3Docs } from "../ui/index";
+import { Box, Flex, Text, Image, VStack, Button } from "@chakra-ui/react";
+import { ButtonUseful3Docs } from "./ButtonUseful3Docs";
 import { useHoveredMenuItem } from "./HeaderContainer";
 
 function Top() {
@@ -51,14 +51,23 @@ function Top() {
             <Box height="8px" />
             <ButtonUseful3Docs />
             <Box height="3px" />
-            <ButtonWhite
-              textMain="無料で試してみる"
-              url="https://smarthr.jp/signup/"
-              hover={{
+            <Button
+              as="a"
+              width="390px"
+              height="55px"
+              fontSize="16px"
+              fontWeight="600"
+              color="black"
+              background="white"
+              rounded="100"
+              href="https://smarthr.jp/signup/"
+              _hover={{
                 top: "-1px",
                 boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
               }}
-            />
+            >
+              無料で試してみる
+            </Button>
           </VStack>
 
           <Flex height="560px" overflow="hidden" right="75px" width="65%">
