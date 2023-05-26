@@ -2,7 +2,7 @@ import { Box, Button, List, ListItem } from "@chakra-ui/react";
 
 function ButtonArea() {
   return (
-    <Box boxSizing="border-box" background="#f4f8f9">
+    <Box boxSizing="border-box" background="#f4f8f9" paddingBottom="60px">
       <List
         gap="20px 32px"
         display="flex"
