@@ -1,5 +1,4 @@
 import { Box, Button, List, ListItem } from "@chakra-ui/react";
-import { ButtonWhiteBordered } from "../ui";
 
 function ButtonArea() {
   return (
@@ -36,13 +35,22 @@ function ButtonArea() {
           </Button>
         </ListItem>
         <ListItem>
-          <ButtonWhiteBordered
-            label="導入効果をシミュレーションする"
+          <Button
+            variant="customOutline"
+            as="a"
+            href="https://soroban.smarthr.jp/"
             width="320px"
             height="52px"
+            alignItems="center"
+            justifyContent="center"
             fontSize="16px"
-            href="https://soroban.smarthr.jp/"
-          />
+            _hover={{
+              boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+              transform: "translateY(-1px)",
+            }}
+          >
+            導入効果をシミュレーションする
+          </Button>
         </ListItem>
       </List>
     </Box>

@@ -1,5 +1,5 @@
 // theme.js
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, theme } from "@chakra-ui/react";
 const customTheme = extendTheme({
   styles: {
     global: {
@@ -9,6 +9,24 @@ const customTheme = extendTheme({
           "'YakuHanJP', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif",
         lineHeight: "1",
         fontWeight: "300",
+      },
+    },
+  },
+  components: {
+    Button: {
+      variants: {
+        customOutline: () => {
+          return {
+            borderRadius: "48px",
+            border: "2px solid #e5e5e5",
+            background: "white",
+            lineHeight: "1.5",
+            color: "#444",
+            fontSize: "14px",
+            fontWeight: "700",
+            transition: "all .2s ease",
+          };
+        },
       },
     },
   },

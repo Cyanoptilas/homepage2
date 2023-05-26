@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, HStack, Text } from "@chakra-ui/react";
 import Head from "next/head";
 
 function Section02() {
@@ -12,7 +12,6 @@ function Section02() {
         fontSize="28px"
         textAlign="center"
         lineHeight="1.5"
-        // fontSize="18px"
         fontWeight="700"
         color="#444"
       >

@@ -1,4 +1,3 @@
-import { ButtonWhiteBordered } from "@/features/ui";
 import { Box, Button, List, ListItem } from "@chakra-ui/react";
 import { useHoveredMenuItem } from "../HeaderContainer";
 
@@ -15,6 +14,20 @@ function SubMenuContent6() {
     width: "2px",
     height: "240px",
     backgroundColor: "#f4f8f9",
+  };
+
+  const IconBlank = {
+    content: '""',
+    position: "absolute",
+    width: "12px",
+    height: "12px",
+    top: "50%",
+    right: "18px",
+    transform: "translateY(-50%)",
+    backgroundImage: "url(/image/picture/icon_blank_gray.svg)",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "50%",
+    backgroundSize: "contain",
   };
 
   interface IListItemCustom {
@@ -72,19 +85,47 @@ function SubMenuContent6() {
             <ListItemCustom>
               <IconBox imageUrl="url(/image/picture/megaMenu_img_01.svg)" />
               <TextBox text="動画でSmartHRがわかる" />
-              <ButtonWhiteBordered
-                label="ビデオライブラリ"
+              <Button
+                variant="customOutline"
+                as="a"
                 href="https://video.smarthr.jp/"
-                isBlank
-              />
+                width="280px"
+                height="48px"
+                alignItems="center"
+                justifyContent="center"
+                fontSize="14px"
+                target="_blank"
+                rel="noopener noreferrer"
+                _hover={{
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                  transform: "translateY(-1px)",
+                }}
+                _before={IconBlank}
+              >
+                ビデオライブラリ
+              </Button>
             </ListItemCustom>
             <ListItemCustom>
               <IconBox imageUrl="url(/image/picture/megaMenu_img_02.svg)" />
               <TextBox text="目的に合わせて選べる" />
-              <ButtonWhiteBordered
-                label="お役立ち資料一覧"
-                href="https://smarthr.jp/resources_service"
-              />
+              <Button
+                variant="customOutline"
+                as="a"
+                href="https://video.smarthr.jp/"
+                width="73%"
+                height="48px"
+                maxWidth="280px"
+                alignItems="center"
+                justifyContent="center"
+                target="_blank"
+                rel="noopener noreferrer"
+                _hover={{
+                  boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+                  transform: "translateY(-1px)",
+                }}
+              >
+                お役立ち資料一覧
+              </Button>
             </ListItemCustom>
             <ListItemCustom>
               <IconBox imageUrl="url(/image/picture/megaMenu_img_03.png)" />
