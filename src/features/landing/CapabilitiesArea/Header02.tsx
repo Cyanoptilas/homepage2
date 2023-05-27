@@ -24,20 +24,28 @@ function Header02() {
         maxWidth="584px"
         margin="60px 0 0"
         padding="0 72px 60px"
-        _before={{
-          content: "'02'",
-          color: "#00c4cc",
-          display: "block",
-          marginBottom: "10px",
-          fontSize: "90px",
-          lineHeight: "1",
-        }}
       >
-        <Heading as="h2">
+        <Heading
+          as="h2"
+          marginTop="-30px"
+          fontSize="32px"
+          fontWeight="700"
+          lineHeight="1.6"
+          _before={{
+            content: "'02'",
+            font: "normal normal 700 10px 'Noto Sans JP'",
+            color: "#00c4cc",
+            display: "block",
+            marginBottom: "4px",
+            fontSize: "90px",
+            lineHeight: "1",
+            fontWeight: "700",
+          }}
+        >
           最新の人事データが自然に集まり、
-          <Heading as="span" color="#00c4cc" fontStyle="normal">
+          <Text as="span" color="#00c4cc">
             一元管理
-          </Heading>
+          </Text>
           できる。
         </Heading>
         <Text

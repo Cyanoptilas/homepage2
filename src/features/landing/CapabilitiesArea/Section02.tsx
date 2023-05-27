@@ -1,5 +1,43 @@
-import { Box, Button, Flex, Heading, HStack, Text } from "@chakra-ui/react";
-import Head from "next/head";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
+import React from "react";
+
+const ContentsTop = [
+  { label: "採用・入社", description: "自宅からスマホで\n入社手続きが完了" },
+  {
+    label: "月次",
+    description: "移動中でも給与の確認や\nサーベイの回答ができる",
+  },
+  { label: "年末", description: "年末調整はカンタンな\n質問に答えるだけ" },
+  { label: "人事評価", description: "シートの作成・配布、\n集計もラクラクに" },
+];
+
+const ContentsBottom = [
+  {
+    label: "ライフイベント",
+    description: "引越、結婚などによる\n身上変更もカンタンに申請",
+  },
+  {
+    label: "緊急時",
+    description: "仕事に行けない状況でも\n見舞金などの申請が可能",
+  },
+  {
+    label: "就業時",
+    description: "お知らせや就業規則などの\n案内が受け取れる",
+  },
+  {
+    label: "退職時",
+    description: "退職後も源泉徴収票、\n給与明細の閲覧ができる",
+  },
+];
 
 function Section02() {
   return (
@@ -18,7 +56,7 @@ function Section02() {
         あらゆるシーンで、自然にデータが集まる・蓄まる
       </Heading>
       <Box margin="56px auto 0" boxSizing="border-box">
-        <Box display="grid" gap="32px 0" boxSizing="border-box">
+        <Box display="grid" gap="32px " boxSizing="border-box">
           <Box order="2" display="block">
             <Heading
               as="h4"
@@ -97,9 +135,39 @@ function Section02() {
             </Heading>
           </Box>
           <Box order="1">
-            <HStack></HStack>
+            <List
+              display="grid"
+              gap="22px"
+              gridTemplateColumns="repeat(auto-fit,calc((100% - 66px) / 4))"
+            >
+              {ContentsTop.map((content) => {
+                return (
+                  <AggregationListItem
+                    key={content.label}
+                    label={content.label}
+                    description={content.description}
+                  />
+                );
+              })}
+            </List>
           </Box>
-          <Box order="3"></Box>
+          <Box order="3">
+            <List
+              display="grid"
+              gap="22px"
+              gridTemplateColumns="repeat(auto-fit,calc((100% - 66px) / 4))"
+            >
+              {ContentsBottom.map((content) => {
+                return (
+                  <AggregationListItem
+                    key={content.label}
+                    label={content.label}
+                    description={content.description}
+                  />
+                );
+              })}
+            </List>
+          </Box>
         </Box>
       </Box>
     </Box>
@@ -113,20 +181,36 @@ interface Props {
 
 function AggregationListItem({ label, description }: Props) {
   return (
-    <Flex
+    <ListItem
       display="flex"
       flexDirection="column"
       listStyleType="none"
       boxSizing="border-box"
     >
       <Box display="flex">
-        <Heading as="h5">採用・入社</Heading>
+        <Heading
+          as="h5"
+          position="relative"
+          zIndex="1"
+          bottom="-1px"
+          display="inline-flex"
+          alignItems="center"
+          justifyContent="center"
+          background="#12abb1"
+          borderRadius="8px 8px 0 0"
+          height="36px"
+          margin="0"
+          padding="0 20px"
+          color="#fff"
+          fontSize="18px"
+        >
+          {label}
+        </Heading>
       </Box>
       <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
-        boxSizing="border-box"
         flex="1"
         background="#f4f8f9"
         border="1px solid #e3eff1"
@@ -138,15 +222,17 @@ function AggregationListItem({ label, description }: Props) {
           fontSize="16px"
           textAlign="center"
           lineHeight="1.5"
-          marginBottom="0"
-          margin="0 0 20px"
         >
-          自宅からスマホで
-          <br />
-          入社手続きが完了
+          {description.split(/(\n)/).map((item) => {
+            return (
+              <React.Fragment key={item}>
+                {item.match(/\n/) ? <br /> : item}
+              </React.Fragment>
+            );
+          })}
         </Text>
       </Box>
-    </Flex>
+    </ListItem>
   );
 }
 
