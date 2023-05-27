@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  HStack,
-  List,
-  ListItem,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, List, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
 
 const ContentsTop = [
