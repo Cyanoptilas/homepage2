@@ -12,6 +12,7 @@ import {
   HeaderContainer,
   Top,
   ButtonArea,
+  FeaturesArea,
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
@@ -31,6 +32,7 @@ export default function Home() {
         <BarServiceOutline />
         <ButtonArea />
         <CapabilitiesArea />
+        <FeaturesArea />
       </Box>
     </>
   );

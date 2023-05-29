@@ -2,6 +2,7 @@ export { CapabilitiesArea } from "./CapabilitiesArea/CapabilitiesArea";
 export { Annotation } from "./Annotation";
 export { Availability } from "./Availability";
 export { CompaniesLogoSlide } from "./CompaniesLogoSlide";
+export { FeaturesArea } from "./FeaturesArea";
 export { BarNo1 } from "./BarNo1";
 export { BarServiceOutline } from "./BarServiceOutline";
 export { ButtonArea } from "./ButtonArea";
