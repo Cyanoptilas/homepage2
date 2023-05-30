@@ -1,4 +1,5 @@
 export { CapabilitiesArea } from "./CapabilitiesArea/CapabilitiesArea";
+export { FunctionsArea } from "./FunctionsArea";
 export { Annotation } from "./Annotation";
 export { Availability } from "./Availability";
 export { CompaniesLogoSlide } from "./CompaniesLogoSlide";
