@@ -44,7 +44,7 @@ function SubMenuListTitle({ item, index, hoveredNo, setHoveredNo }: Props) {
               right: hoveredNo === index ? "-12px" : "0px",
               transform: "translateY(-50%)",
               margin: "1px 0 0",
-              backgroundImage: "url(/image/picture/icon_arrowRight_blue.svg)",
+              backgroundImage: "url(/image/icon/icon_arrowRight_blue.svg)",
               backgroundPosition: "50%",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",

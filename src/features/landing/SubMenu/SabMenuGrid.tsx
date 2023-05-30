@@ -76,7 +76,7 @@ function SubMenuGrid({ item1, index1, id }: Props1) {
                               height: "12px",
                               margin: "5px 0 0 4px",
                               backgroundImage:
-                                "url(/image/picture/icon_blank_black.svg)",
+                                "url(/image/icon/icon_blank_black.svg)",
                               backgroundRepeat: "no-repeat",
                               backgroundPosition: "50%",
                               backgroundSize: "contain",

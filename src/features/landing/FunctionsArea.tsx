@@ -34,7 +34,7 @@ const ContentsFunctionBottom = [
   { label: "人事評価", iconHref: "./image/icon/icon_evaluation_blue.svg" },
   {
     label: "配置シミュレーション",
-    iconHref: "./image/icon/icon_simulation_blue.svg",
+    iconHref: "./image/icon/icon_simulation_blue_s.svg",
   },
   { label: "従業員サーベイ", iconHref: "./image/icon/icon_survey_blue.svg" },
   {
@@ -149,6 +149,8 @@ function FunctionsArea() {
             background="#f69c2f"
             color="#fff"
             borderRadius="100px"
+            lineHeight="2"
+            padding="4px"
             _hover={{
               backgroundColor: "#f6b12f",
               boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",

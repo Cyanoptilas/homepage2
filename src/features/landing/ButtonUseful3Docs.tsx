@@ -62,7 +62,7 @@ function ButtonUseful3Docs() {
         </Flex>
         <Flex height="20px" width="20px" background="transparent">
           <Image
-            src="/image/picture/icon_download.svg"
+            src="/image/icon/icon_download.svg"
             alt="img_top"
             height="20px"
             width="20px"

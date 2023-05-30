@@ -24,7 +24,7 @@ function SubMenuContent6() {
     top: "50%",
     right: "18px",
     transform: "translateY(-50%)",
-    backgroundImage: "url(/image/picture/icon_blank_gray.svg)",
+    backgroundImage: "url(/image/icon/icon_blank_gray.svg)",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "50%",
     backgroundSize: "contain",

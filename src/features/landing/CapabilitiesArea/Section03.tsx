@@ -13,25 +13,25 @@ import React from "react";
 const Contents = [
   {
     label: "人事評価",
-    iconHref: "./image/picture/icon_evaluation_blue.svg",
+    iconHref: "./image/icon/icon_evaluation_blue.svg",
     description: "蓄まった従業員情報を活用して\n効率的な人事評価を実施",
     imageHref: "./image/picture/img_function_evaluation.png",
   },
   {
     label: "配置シミュレーション",
-    iconHref: "./image/picture/icon_simulation_blue_s.svg",
+    iconHref: "./image/icon/icon_simulation_blue_s.svg",
     description: "従業員情報を活用しながら\n最適な人員配置を支援",
     imageHref: "./image/picture/img_function_simulation.png",
   },
   {
     label: "従業員サーベイ",
-    iconHref: "./image/picture/icon_survey_blue.svg",
+    iconHref: "./image/icon/icon_survey_blue.svg",
     description: "目的に合わせたアンケートで\n組織課題の発見を支援",
     imageHref: "./image/picture/img_function_survey.png",
   },
   {
     label: "ラクラク分析レポート",
-    iconHref: "./image/picture/icon_report_blue.svg",
+    iconHref: "./image/icon/icon_report_blue.svg",
     description: "組織改善に必要な重要指標を\nかんたんに可視化・分析",
     imageHref: "./image/picture/img_function_report.png",
   },
@@ -86,7 +86,7 @@ function Section03() {
             top: "-52px",
             left: "50%",
             background:
-              "url(./image/picture/icon_arrow_bottom.svg) no-repeat 50%",
+              "url(./image/icon/icon_arrow_bottom.svg) no-repeat 50%",
             backgroundSize: "cover",
             width: "16px",
             height: "32px",
@@ -268,7 +268,7 @@ function Section03() {
                     textAlign="center"
                     textDecoration="none!important"
                     _after={{
-                      backgroundImage: "url(./image/picture/icon_download.svg)",
+                      backgroundImage: "url(./image/icon/icon_download.svg)",
                       content: "''",
                       backgroundSize: "cover",
                       width: "16px",

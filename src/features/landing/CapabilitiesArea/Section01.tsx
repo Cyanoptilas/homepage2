@@ -162,7 +162,7 @@ function CustomListItem({ label, num, hours1, hours2 }: Props) {
           _before={{
             content: "''",
             display: "block",
-            background: "url(./image/picture/icon_arrow_bottom_s.svg)",
+            background: "url(./image/icon/icon_arrow_bottom_s.svg)",
             width: "15px",
             height: "27px",
             marginRight: "8px",

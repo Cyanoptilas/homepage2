@@ -91,7 +91,7 @@ function Section02() {
                   content: "''",
                   display: "block",
                   background:
-                    "url(./image/picture/icon_arrows_from_three_direction.svg)",
+                    "url(./image/icon/icon_arrows_from_three_direction.svg)",
                   backgroundSize: "cover",
                   width: "48px",
                   height: "100px",
@@ -101,7 +101,7 @@ function Section02() {
                   content: "''",
                   display: "block",
                   background:
-                    "url(./image/picture/icon_arrows_from_three_direction.svg)",
+                    "url(./image/icon/icon_arrows_from_three_direction.svg)",
                   backgroundSize: "cover",
                   width: "48px",
                   height: "100px",
