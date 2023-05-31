@@ -14,6 +14,7 @@ import {
   ButtonArea,
   FeaturesArea,
   FunctionsArea,
+  ExternalServiceArea,
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
@@ -35,6 +36,7 @@ export default function Home() {
         <CapabilitiesArea />
         <FeaturesArea />
         <FunctionsArea />
+        <ExternalServiceArea />
       </Box>
     </>
   );

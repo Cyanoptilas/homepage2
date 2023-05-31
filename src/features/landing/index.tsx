@@ -3,6 +3,7 @@ export { FunctionsArea } from "./FunctionsArea";
 export { Annotation } from "./Annotation";
 export { Availability } from "./Availability";
 export { CompaniesLogoSlide } from "./CompaniesLogoSlide";
+export { ExternalServiceArea } from "./ExternalServiceArea";
 export { FeaturesArea } from "./FeaturesArea";
 export { BarNo1 } from "./BarNo1";
 export { BarServiceOutline } from "./BarServiceOutline";
