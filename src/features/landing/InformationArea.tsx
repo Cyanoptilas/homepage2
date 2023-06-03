@@ -115,7 +115,6 @@ function CustomListItem({ date, title }: CustomListItemProps) {
           color="#444"
           fontWeight="400"
           lineHeight="1.4"
-          // margin="0 0 20px"
           padding="0"
         >
           {title}
