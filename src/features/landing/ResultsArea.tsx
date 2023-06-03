@@ -183,7 +183,7 @@ function ResultsArea() {
                       <Box height="230px" overflow="hidden" width="100%">
                         <Image
                           src={content.imageHref}
-                          alt="welcome"
+                          alt={content.companyName}
                           transform={
                             hovered === index ? "scale(1.1)" : "scale(1.0)"
                           }
