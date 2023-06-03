@@ -10,6 +10,7 @@ export { BarServiceOutline } from "./BarServiceOutline";
 export { ButtonArea } from "./ButtonArea";
 export { FloatingButtonTrial } from "./FloatingButtonTrial";
 export { HeaderContainer } from "./HeaderContainer";
+export { OthersArea } from "./OthersArea";
 export { ResultsArea } from "./ResultsArea";
 export { SubNavigation } from "./SubNavigation";
 export { Top } from "./Top";
