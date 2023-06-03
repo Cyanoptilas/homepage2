@@ -17,6 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css"
+        />
         <ChakraProvider theme={customTheme}>{children}</ChakraProvider>
       </body>
     </html>

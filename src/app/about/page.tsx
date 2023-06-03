@@ -1,11 +1,9 @@
 "use client";
 
-import { Box, ChakraProvider } from "@chakra-ui/react";
+import { Box, Button, ChakraProvider, Heading } from "@chakra-ui/react";
+
+import SlickSlider from "./SlickSlider";
 
 export default function About() {
-  return (
-    <ChakraProvider>
-      <h3>smarthrの特徴?!</h3>
-    </ChakraProvider>
-  );
+  return <>About</>;
 }

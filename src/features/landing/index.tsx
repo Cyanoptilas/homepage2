@@ -9,6 +9,7 @@ export { BarNo1 } from "./BarNo1";
 export { BarServiceOutline } from "./BarServiceOutline";
 export { ButtonArea } from "./ButtonArea";
 export { FloatingButtonTrial } from "./FloatingButtonTrial";
-export { SubNavigation } from "./SubNavigation";
 export { HeaderContainer } from "./HeaderContainer";
+export { ResultsArea } from "./ResultsArea";
+export { SubNavigation } from "./SubNavigation";
 export { Top } from "./Top";
