@@ -57,7 +57,8 @@ function ButtonUseful3Docs() {
             >
               {textSub}
             </Flex>
-            <Flex>{textMain}</Flex>
+            <Flex
+            margin="8px">{textMain}</Flex>
           </VStack>
         </Flex>
         <Flex height="20px" width="20px" background="transparent">
