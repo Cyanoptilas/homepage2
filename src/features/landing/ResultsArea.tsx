@@ -246,6 +246,11 @@ function ResultsArea() {
           margin="25px auto 0"
           padding="5px 0"
           textAlign="center"
+          _hover={{
+            boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+            transform: "translateY(-1px)",
+            filter: "brightness(110%)",
+          }}
         >
           他の導入事例を見る
         </Button>
