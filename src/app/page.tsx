@@ -17,6 +17,7 @@ import {
   ExternalServiceArea,
   ResultsArea,
   OthersArea,
+  InformationArea,
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
@@ -41,6 +42,7 @@ export default function Home() {
         <ExternalServiceArea />
         <ResultsArea />
         <OthersArea />
+        <InformationArea />
       </Box>
     </>
   );
