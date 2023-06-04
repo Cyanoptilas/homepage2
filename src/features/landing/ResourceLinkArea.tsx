@@ -156,6 +156,12 @@ function CustomListItem({ imageHref, title, buttonHref }: CustomListItemProps) {
         color="#444"
         fontSize="14px"
         maxWidth="196px"
+        _hover={{
+          color: "#333",
+          boxShadow: "0 5px 8px 2px rgba(0,0,0,.14)",
+          filter: "brightness(110%)",
+          transform: "translateY(-1px)",
+        }}
       >
         資料ダウンロード
         <Image
