@@ -14,7 +14,7 @@ function Annotation() {
         marginBottom="26px"
       >
         <Box
-          box-sizing="border-box"
+          boxSizing="border-box"
           margin="0 auto"
           maxWidth="1200px"
           width="100%"
