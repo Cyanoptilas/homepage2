@@ -20,6 +20,7 @@ function AppealBanners() {
     <Box backgroundColor="#fff" margin="50px auto 100px">
       <Box
         maxWidth="825px"
+        height="200px"
         padding="0 10px"
         position="relative"
         boxSizing="border-box"

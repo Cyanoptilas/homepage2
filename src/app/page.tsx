@@ -19,6 +19,7 @@ import {
   OthersArea,
   InformationArea,
   AppealBanners,
+  CmInfoArea,
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
@@ -45,6 +46,7 @@ export default function Home() {
         <OthersArea />
         <InformationArea />
         <AppealBanners />
+        <CmInfoArea />
       </Box>
     </>
   );
