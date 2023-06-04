@@ -15,6 +15,7 @@ export { FloatingButtonTrial } from "./FloatingButtonTrial";
 export { HeaderContainer } from "./HeaderContainer";
 export { InformationArea } from "./InformationArea";
 export { OthersArea } from "./OthersArea";
+export { ResourceLinkArea } from "./ResourceLinkArea";
 export { ResultsArea } from "./ResultsArea";
 export { SubNavigation } from "./SubNavigation";
 export { Top } from "./Top";
