@@ -1,14 +1,5 @@
-import {
-  Box,
-  createIcon,
-  Icon,
-  Image,
-  keyframes,
-  List,
-  ListItem,
-} from "@chakra-ui/react";
+import { Box, List, ListItem } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { AnimatedIcon } from "../test";
 import { IconMail } from "./IconMail";
 import { IconPc } from "./IconPc";
 import { IconYen } from "./IconYen";
@@ -103,7 +94,7 @@ function CustomListItem({
       setBgColor("#00C4CC");
     }
 
-    return () => clearInterval(intervalId); // アンマウント時にクリアする
+    return () => clearInterval(intervalId);
   }, [isHovered]);
 
   return (
@@ -184,7 +175,6 @@ function CustomListItem({
           {buttonLabel}
         </Box>
       </Box>
-      <Box display="inline-block" p={2}></Box>
     </ListItem>
   );
 }
