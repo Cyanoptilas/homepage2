@@ -6,6 +6,7 @@ export { Availability } from "./Availability";
 export { ClientsArea } from "./ClientsArea";
 export { CmInfoArea } from "./CmInfoArea";
 export { CompaniesLogoSlide } from "./CompaniesLogoSlide";
+export { ContactArea } from "./ContactArea/ContactArea";
 export { ExternalServiceArea } from "./ExternalServiceArea";
 export { FeaturesArea } from "./FeaturesArea";
 export { BarNo1 } from "./BarNo1";

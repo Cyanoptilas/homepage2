@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, List, ListItem } from "@chakra-ui/react";
+import { Box, Button, Image, List, ListItem } from "@chakra-ui/react";
 import { useState } from "react";
 
 function ResourceLinkArea() {
