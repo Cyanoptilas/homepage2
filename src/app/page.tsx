@@ -23,6 +23,7 @@ import {
   ClientsArea,
   ResourceLinkArea,
   ContactArea,
+  Footer,
 } from "../features/index";
 import { useHoveredMenuItem } from "@/features/landing/HeaderContainer";
 
@@ -53,6 +54,7 @@ export default function Home() {
         <ClientsArea />
         <ResourceLinkArea />
         <ContactArea />
+        <Footer />
       </Box>
     </>
   );
